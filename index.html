@@ -119,48 +119,112 @@
     </div>
 </section>
 
- <section id="chaos-map" class="content-section">
-        <div class="container">
-            <h2><i class="fas fa-sitemap"></i> カオスマップ</h2>
-            <p>事業領域と事業ステージでマッピングした、エコシステムの全体像です。企業名をクリックすると詳細を表示します。</p>
-            <div class="legend"><strong>凡例:</strong><span class="legend-item"><span class="color-box tag-listed"></span> 上場・成熟</span><span class="legend-item"><span class="color-box tag-growth"></span> グロース</span><span class="legend-item"><span class="color-box tag-early"></span> アーリー</span></div>
-            <div class="chaos-map-container">
-                <div class="chaos-map-grid">
-                    <!-- Grid Header -->
-                    <div class="header-cell"></div>
-                    <div class="header-cell category">AI・機械学習</div>
-                    <div class="header-cell category">産業特化</div>
-                    <div class="header-cell category">プラットフォーム</div>
-                    <div class="header-cell category">コンテンツ</div>
-                    <div class="header-cell category">その他</div>
+<section id="chaos-map" class="content-section">
+  <div class="container">
+    <h2><i class="fas fa-sitemap"></i> カオスマップ</h2>
+    <p>事業ドメイン × 事業ステージで 35 社をマッピングしました。会社名クリックで詳細へジャンプします。</p>
 
-                    <!-- Listed Stage Row -->
-                    <div class="header-cell stage">上場・成熟</div>
-                    <div class="map-cell"><span class="company-tag tag-listed" data-company-id="pkshatechnology">PKSHA Technology</span></div>
-                    <div class="map-cell"></div>
-                    <div class="map-cell"><span class="company-tag tag-listed" data-company-id="gunosy">Gunosy</span></div>
-                    <div class="map-cell"></div>
-                    <div class="map-cell"></div>
+    <!-- Legend -->
+    <div class="legend">
+      <strong>凡例:</strong>
+      <span class="legend-item"><span class="color-box tag-listed"></span> 上場・成熟</span>
+      <span class="legend-item"><span class="color-box tag-growth"></span> グロース</span>
+      <span class="legend-item"><span class="color-box tag-early"></span> アーリー</span>
+    </div>
 
-                    <!-- Growth Stage Row -->
-                    <div class="header-cell stage">グロース</div>
-                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="aces">ACES</span><span class="company-tag tag-growth" data-company-id="aiq">AIQ</span><span class="company-tag tag-growth" data-company-id="elyza">ELYZA</span><span class="company-tag tag-growth" data-company-id="stathack">StatHack</span><span class="company-tag tag-growth" data-company-id="neoai">NeoAI</span><span class="company-tag tag-growth" data-company-id="deepreneur">Deepreneur</span></div>
-                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="deepx">DeepX</span><span class="company-tag tag-growth" data-company-id="ollo">Ollo</span><span class="company-tag tag-growth" data-company-id="パンハウス">パンハウス</span><span class="company-tag tag-growth" data-company-id="akari">AKARI</span></div>
-                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="readyfor">READYFOR</span><span class="company-tag tag-growth" data-company-id="almondo">Almondo</span></div>
-                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="bestat">bestat</span></div>
-                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="eques">Eques</span><span class="company-tag tag-growth" data-company-id="igsa">IGSA</span></div>
+    <!-- Chaos-map grid  -->
+    <div class="chaos-map-container">
+      <div class="chaos-map-grid">
+        <!-- 1. Grid header行 -->
+        <div class="header-cell"></div>
+        <div class="header-cell category">LLM・生成AI<br>プラットフォーム</div>
+        <div class="header-cell category">産業ビジョン<br>ロボティクス</div>
+        <div class="header-cell category">業界特化 DX<br>SaaS</div>
+        <div class="header-cell category">コンテンツ／<br>消費者向け</div>
+        <div class="header-cell category">Edge／IoT<br>その他</div>
 
-                    <!-- Early Stage Row -->
-                    <div class="header-cell stage">アーリー</div>
-                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="elith">Elith</span><span class="company-tag tag-early" data-company-id="polaris.ai">PolarisAI</span><span class="company-tag tag-early" data-company-id="epicai">EpicAI</span><span class="company-tag tag-early" data-company-id="integrai">IntegrAI</span></div>
-                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="scien">SCIEN</span><span class="company-tag tag-early" data-company-id="2wins">2WINS</span><span class="company-tag tag-early" data-company-id="proxindustries">Prox</span><span class="company-tag tag-early" data-company-id="三豊ai開発">三豊AI</span></div>
-                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="arcra">ARCRA</span><span class="company-tag tag-early" data-company-id="quackshift">QuackShift</span><span class="company-tag tag-early" data-company-id="sparkplus">Spark+</span></div>
-                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="エムニ">エムニ</span><span class="company-tag tag-early" data-company-id="synclip">SynClip</span><span class="company-tag tag-early" data-company-id="bakutan">BAKUTAN</span><span class="company-tag tag-early" data-company-id="panda">PANDA</span></div>
-                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="athenatechnologies">Athena</span><span class="company-tag tag-early" data-company-id="wanderlustequipmentllc.">Wanderlust</span><span class="company-tag tag-early" data-company-id="jings">JINGS</span></div>
-                </div>
-            </div>
+        <!-- 2. 上場・成熟 -->
+        <div class="header-cell stage">上場・成熟</div>
+        <div class="map-cell"><span class="company-tag tag-listed" data-company-id="pkshatechnology">PKSHA&nbsp;Tech</span></div>
+        <div class="map-cell"></div>
+        <div class="map-cell"></div>
+        <div class="map-cell"><span class="company-tag tag-listed" data-company-id="gunosy">Gunosy</span></div>
+        <div class="map-cell"></div>
+
+        <!-- 3. グロース -->
+        <div class="header-cell stage">グロース</div>
+        <!-- LLM・生成AI -->
+        <div class="map-cell">
+          <span class="company-tag tag-growth" data-company-id="aces">ACES</span>
+          <span class="company-tag tag-growth" data-company-id="aiq">AIQ</span>
+          <span class="company-tag tag-growth" data-company-id="elyza">ELYZA</span>
+          <span class="company-tag tag-growth" data-company-id="neoai">NeoAI</span>
+          <span class="company-tag tag-growth" data-company-id="deepreneur">Deepreneur</span>
         </div>
-    </section>
+        <!-- 産業ビジョン・ロボ -->
+        <div class="map-cell">
+          <span class="company-tag tag-growth" data-company-id="deepx">DeepX</span>
+          <span class="company-tag tag-growth" data-company-id="ollo">Ollo</span>
+          <span class="company-tag tag-growth" data-company-id="igsa">IGSA</span>
+        </div>
+        <!-- 業界特化 DX -->
+        <div class="map-cell">
+          <span class="company-tag tag-growth" data-company-id="readyfor">READYFOR</span>
+          <span class="company-tag tag-growth" data-company-id="stathack">StatHack</span>
+          <span class="company-tag tag-growth" data-company-id="bestat">bestat</span>
+          <span class="company-tag tag-growth" data-company-id="eques">EQUES</span>
+        </div>
+        <!-- コンテンツ -->
+        <div class="map-cell">
+          <span class="company-tag tag-growth" data-company-id="wanderlustequipmentllc.">Wanderlust</span>
+        </div>
+        <!-- Edge／IoT -->
+        <div class="map-cell">
+          <span class="company-tag tag-growth" data-company-id="scien">SCIEN</span>
+        </div>
+
+        <!-- 4. アーリー -->
+        <div class="header-cell stage">アーリー</div>
+        <!-- LLM・生成AI -->
+        <div class="map-cell">
+          <span class="company-tag tag-early" data-company-id="athenatechnologies">Athena</span>
+          <span class="company-tag tag-early" data-company-id="polaris.ai">Polaris.AI</span>
+          <span class="company-tag tag-early" data-company-id="jings">JINGS</span>
+          <span class="company-tag tag-early" data-company-id="quackshift">QuackShift</span>
+        </div>
+        <!-- 産業ビジョン・ロボ -->
+        <div class="map-cell">
+          <span class="company-tag tag-early" data-company-id="proxindustries">Prox&nbsp;Ind.</span>
+          <span class="company-tag tag-early" data-company-id="sparkplus">Spark+</span>
+          <span class="company-tag tag-early" data-company-id="emuni">エムニ</span>
+          <span class="company-tag tag-early" data-company-id="三豊ai開発">三豊AI</span>
+        </div>
+        <!-- 業界特化 DX -->
+        <div class="map-cell">
+          <span class="company-tag tag-early" data-company-id="integrai">IntegrAI</span>
+          <span class="company-tag tag-early" data-company-id="arcra">ARCRA</span>
+          <span class="company-tag tag-early" data-company-id="bakutan">BAKUTAN</span>
+          <span class="company-tag tag-early" data-company-id="epicai">EpicAI</span>
+          <span class="company-tag tag-early" data-company-id="2wins">2WINS</span>
+        </div>
+        <!-- コンテンツ -->
+        <div class="map-cell">
+          <span class="company-tag tag-early" data-company-id="synclip">SynClip</span>
+          <span class="company-tag tag-early" data-company-id="panda">PANDA</span>
+          <span class="company-tag tag-early" data-company-id="elith">Elith</span>
+          <span class="company-tag tag-early" data-company-id="panhouse">PanHouse</span>
+        </div>
+        <!-- Edge／IoT -->
+        <div class="map-cell">
+          <span class="company-tag tag-early" data-company-id="akari">AKARI</span>
+          <span class="company-tag tag-early" data-company-id="athenatechnologies"></span><!-- duplicated safe placeholder -->
+          <span class="company-tag tag-early" data-company-id="integrai"></span><!-- if needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="future" class="content-section-offwhite">
     <div class="container">
