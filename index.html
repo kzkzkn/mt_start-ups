@@ -1,251 +1,230 @@
-/* --- Global Styles & Variables --- */
-:root {
-    --primary-color: #0d47a1;
-    --secondary-color: #1976d2;
-    --dark-color: #212121;
-    --text-color: #424242;
-    --light-color: #f5f7fa;
-    --white-color: #ffffff;
-    --border-color: #e0e0e0;
-    --tag-listed-bg: #e3f2fd; --tag-listed-text: #0d47a1;
-    --tag-growth-bg: #e0f2f1; --tag-growth-text: #004d40;
-    --tag-early-bg: #fffde7; --tag-early-text: #f57f17;
-    --font-family-base: 'Noto Sans JP', sans-serif;
-    --font-family-heading: 'Roboto', sans-serif;
-    --shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>松尾研発スタートアップ エコシステム | 全35社</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com/)">
+<link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com/)" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
 
-html { 
-    scroll-behavior: smooth; 
-    scroll-padding-top: 80px; 
-}
+<header class="main-header">
+<div class="logo">松尾研発スタートアップエコシステム</div>
+<nav class="main-nav">
+<ul>
+<li><a href="#companies">全社概要</a></li>
+<li><a href="#about-institute">松尾研究所とは</a></li>
+<li><a href="#about-startups">スタートアップとは</a></li>
+<li><a href="#history">歴史</a></li>
+<li><a href="#chaos-map">カオスマップ</a></li>
+<li><a href="#future">価値と展望</a></li>
+</ul>
+</nav>
+</header>
 
-body { 
-    margin: 0; 
-    font-family: var(--font-family-base); 
-    color: var(--text-color); 
-    line-height: 1.8; 
-    background-color: var(--light-color); 
-}
+<main>
+<section id="companies" class="content-section">
+<div class="container">
+<div class="section-header">
+<h1>松尾研発スタートアップ 全35社</h1>
+<p class="subtitle">大学から始まる、イノベーションの連鎖。その主役である認定企業をご紹介します。</p>
+</div>
 
-.container { 
-    max-width: 1100px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-}
+        <div class="tabs">
+            <button class="tab-link active" data-tab="listed">上場・大規模企業 (2)</button>
+            <button class="tab-link" data-tab="growth">グロースステージ (15)</button>
+            <button class="tab-link" data-tab="early">アーリーステージ (18)</button>
+        </div>
 
-h1, h2, h3, h4, h5 { 
-    font-family: var(--font-family-heading); 
-    font-weight: 700; 
-    color: var(--dark-color); 
-    line-height: 1.4; 
-}
+        <!-- Tab Content: Listed -->
+        <div id="listed" class="tab-content active">
+            <div class="company-grid">
+                <div class="company-card" data-company-id="gunosy"><span class="tag tag-listed">上場</span><h4>1. 株式会社Gunosy</h4><p>情報キュレーションサービスおよび広告プラットフォームの開発・運営</p><div class="card-footer"><span class="est-year">設立: 2012年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="pkshatechnology"><span class="tag tag-listed">上場</span><h4>2. 株式会社PKSHA Technology</h4><p>– AIソリューション事業（PKSHA ReSearch／PKSHA Enterprise AI）<br>– AI SaaS事業（チャットボット、ボイスボット、FAQ、音声解析、AIヘルプデスクなど）</p><div class="card-footer"><span class="est-year">設立: 2012年</span><span class="details-text">詳細を見る →</span></div></div>
+            </div>
+        </div>
+        <!-- Tab Content: Growth -->
+        <div id="growth" class="tab-content">
+            <div class="company-grid">
+                <div class="company-card" data-company-id="deepx"><span class="tag tag-growth">Growth</span><h4>3. 株式会社DeepX（DeepX, Inc.）</h4><p>建設機械・重機の自動運転システム開発および製造現場のデジタル化支援</p><div class="card-footer"><span class="est-year">設立: 2016年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="readyfor"><span class="tag tag-growth">Growth</span><h4>4. READYFOR株式会社</h4><p>クラウドファンディング事業、ファンドレイジング・コンサルティング事業、プログラム事業、フィランソロピー事業</p><div class="card-footer"><span class="est-year">設立: 2014年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="aces"><span class="tag tag-growth">Growth</span><h4>5. 株式会社ACES</h4><p>・AIトランスフォーメーション事業（DXパートナーサービス）<br>・AIソフトウェア事業（SaaS提供）</p><div class="card-footer"><span class="est-year">設立: 2017年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="aiq"><span class="tag tag-growth">Growth</span><h4>6. AIQ株式会社</h4><p>・個人の「興味・価値観・ライフスタイル」を高精度に再現するデジタルクローンの研究開発・提供<br>・「HUMANISE AI」を核としたデジタルクローンエコシステムの構築</p><div class="card-footer"><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="bestat"><span class="tag tag-growth">Growth</span><h4>7. bestat株式会社</h4><p>3Dデジタルコンテンツの自動生成・管理・活用クラウドサービスの開発・提供</p><div class="card-footer"><span class="est-year">設立: 2018年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="elyza"><span class="tag tag-growth">Growth</span><h4>8. 株式会社ELYZA</h4><p>・AIリサーチ＆ソリューション事業（大手企業向けのLLM研究開発支援、システム実装）<br> ・AI SaaS事業（生成AIを活用した業務・DX支援ツールの開発・提供）</p><div class="card-footer"><span class="est-year">設立: 2018年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="ollo"><span class="tag tag-growth">Growth</span><h4>9. 株式会社Ollo（Ollo Inc.）</h4><p>製造現場の作業解析・最適化を目的としたAIソフトウェアの開発・提供</p><div class="card-footer"><span class="est-year">設立: 2019年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="stathack"><span class="tag tag-growth">Growth</span><h4>10. 株式会社StatHack</h4><p>・AIコンサルティングおよび受託開発<br>・自社SaaSサービスの開発・提供</p><div class="card-footer"><span class="est-year">設立: 2021年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="パンハウス"><span class="tag tag-growth">Growth</span><h4>11. 株式会社パンハウス (PanHouse, Inc.)</h4><p>企業向けAIソリューションの企画・開発・導入支援</p><div class="card-footer"><span class="est-year">設立: 2021年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="akari"><span class="tag tag-growth">Growth</span><h4>12. 株式会社AKARI (AKARI Inc.)</h4><p>AIモデルの学習効率を高めるトレーニングデータ生成・管理プラットフォームの企画・開発・運営</p><div class="card-footer"><span class="est-year">設立: 2022年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="eques"><span class="tag tag-growth">Growth</span><h4>13. 株式会社EQUES</h4><p>- AIソリューション開発（コンサルティングからPoC・本番導入まで一気通貫）<br>- Generative AIの研究開発およびプロダクト化<br>- 業界特化型AI SaaS提供</p><div class="card-footer"><span class="est-year">設立: 2022年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="almondo"><span class="tag tag-growth">Growth</span><h4>14. 株式会社Almondo</h4><p>法人向けAIソリューション事業（AI活用の企画立案から開発・実運用まで一気通貫で提供）</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="neoai"><span class="tag tag-growth">Growth</span><h4>15. 株式会社neoAI</h4><p>・企業向け業務特化型生成AIソリューションの開発・提供</p><div class="card-footer"><span class="est-year">設立: 2022年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="igsa"><span class="tag tag-growth">Growth</span><h4>16. 株式会社IGSA</h4><p>- ヘルスケア事業：AIによる認知症（MCI）早期発見サービスの研究・開発<br>  - AI/DXパートナー事業：エンタープライズ企業向けビジネスプロセスのデジタル化・AI化支援</p><div class="card-footer"><span class="est-year">設立: 2022年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="deepreneur"><span class="tag tag-growth">Growth</span><h4>17. 株式会社Deepreneur (Deepreneur Inc.)</h4><p>- AIソリューション事業<br>- 大規模言語モデル（LLM）事業</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+            </div>
+        </div>
+        <!-- Tab Content: Early -->
+        <div id="early" class="tab-content">
+            <div class="company-grid">
+                <div class="company-card" data-company-id="elith"><span class="tag tag-early">Early</span><h4>18. 株式会社Elith（Elith Inc.）</h4><p>- 「オートクチュールAI開発」を掲げたカスタムAIソリューションの受託・コンサルティング<br>- 自社プロダクト（手話AI「SHUWAI」、半導体歩留り改善画像検査AIなど）の研究開発<br>- 共同研究・アドバイザリーサービス</p><div class="card-footer"><span class="est-year">設立: 2022年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="エムニ"><span class="tag tag-early">Early</span><h4>19. 株式会社エムニ</h4><p>製造業特化型生成AIソリューションの開発・提供</p><div class="card-footer"><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="synclip"><span class="tag tag-early">Early</span><h4>20. SynClip株式会社</h4><p>AI技術を活用した映像生成・編集プラットフォームの開発・提供</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="athenatechnologies"><span class="tag tag-early">Early</span><h4>21. 株式会社Athena Technologies（英語表記: Athena Technologies, Inc.）</h4><p>AIセキュリティ＆ガバナンス事業</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="polaris.ai"><span class="tag tag-early">Early</span><h4>22. Polaris.AI株式会社</h4><p>・企業向けAIソリューションの企画・開発・導入支援<br>・AIプロジェクトのコンサルティング／伴走型運用</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="arcra"><span class="tag tag-early">Early</span><h4>23. 株式会社ARCRA</h4><p>– 企業向けAI導入支援（企画・PoC・開発・導入・運用）<br>  – AIソフトウェア受託開発<br>  – AI研修・人材育成<br>  – 建築・都市領域を含む業務効率化プラットフォーム運営</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="wanderlustequipmentllc."><span class="tag tag-early">Early</span><h4>24. WANDERLUST EQUIPMENT LLC.</h4><p>ウルトラライトアウトドアギアの企画・設計・製造および直販</p><div class="card-footer"><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="scien"><span class="tag tag-early">Early</span><h4>25. 株式会社SCIEN（SCIEN Inc.）</h4><p>- 人工知知能・ソフトウェア・システムの研究開発<br>- AI技術・ブロックチェーン等を活⽤したソリューション・プラットフォーム・アプリ開発<br>- AI製品販売およびカスタマイズITソリューション提供<br>- 教育・研修およびコンサルティング</p><div class="card-footer"><span class="est-year">設立: 2024年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="jings"><span class="tag tag-early">Early</span><h4>26. 株式会社JINGS</h4><p>・AI特化型システム受託開発<br>・DX推進コンサルティング<br>・生成AI／大規模言語モデル（LLM）導入支援</p><div class="card-footer"><span class="est-year">設立: 2024年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="quackshift"><span class="tag tag-early">Early</span><h4>27. 株式会社QuackShift</h4><p>・大規模言語モデル（LLM）や生成AIを核とした伴走型AI/DXソリューション開発<br> ・AI活用セミナー・コンサルティング</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="bakutan"><span class="tag tag-early">Early</span><h4>28. BAKUTAN株式会社</h4><p>– AI技術とマーケットデザイン理論を組み合わせたHR領域のDX・AIインテグレーション<br>  – 人的資本経営支援ソリューションの研究開発・提供</p><div class="card-footer"><span class="est-year">設立: 2024年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="sparkplus"><span class="tag tag-early">Early</span><h4>29. 株式会社SparkPlus（Spark+）</h4><p>・製造業を起点とした企業向けDXソリューションおよびAIコンサルティング</p><div class="card-footer"><span class="est-year">設立: 2024年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="2wins"><span class="tag tag-early">Early</span><h4>30. 株式会社2WINS</h4><p>AIソリューション事業およびAI SaaS事業</p><div class="card-footer"><span class="est-year">設立: 2022年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="epicai"><span class="tag tag-early">Early</span><h4>31. 株式会社EpicAI</h4><p>B2B向けオーダーメイドAIソリューションの開発・提供、データアナリティクス</p><div class="card-footer"><span class="est-year">設立: 2023年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="proxindustries"><span class="tag tag-early">Early</span><h4>32. Prox Industries株式会社</h4><p>製造業DX支援に特化したAI・ロボティクスソリューションの開発・提供</p><div class="card-footer"><span class="est-year">設立: 2024年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="panda"><span class="tag tag-early">Early</span><h4>33. Panda株式会社</h4><p>・AI検知技術を用いたシステム開発・研究<br>・MR（Mixed Reality）グラスを活用した現場作業支援ツール開発<br>・顔認証を用いた顧客情報提示システムの受託開発<br>・機械学習モデルを活用した各種課題解決システムの受託開発</p><div class="card-footer"><span class="est-year">設立: 2019年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="三豊ai開発"><span class="tag tag-early">Early</span><h4>34. 株式会社三豊AI開発 (MitoyoAI Development Co., Ltd.)</h4><p>AIとロボット・ドローン技術を組み合わせた送電線点検サービスの研究開発・提供</p><div class="card-footer"><span class="est-year">設立: 2020年</span><span class="details-text">詳細を見る →</span></div></div>
+                <div class="company-card" data-company-id="integrai"><span class="tag tag-early">Early</span><h4>35. 株式会社IntegrAI (IntegrAI Inc.)</h4><p>・産業用AIカメラシステム「IntegrAI Camera」の開発・提供<br>・製造業向けDX支援ソフトウェア開発（Industrial AI Lab）</p><div class="card-footer"><span class="est-year">設立: 2020年</span><span class="details-text">詳細を見る →</span></div></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-h1 { font-size: 3.2rem; }
-h2 { font-size: 2.4rem; border-bottom: 4px solid var(--primary-color); padding-bottom: 15px; margin-bottom: 40px; }
-h3 { font-size: 1.6rem; } 
-h4 { font-size: 1.2rem; margin: 0; }
-h5 { font-size: 1rem; margin-top: 25px; color: var(--primary-color); border-bottom: 1px solid var(--border-color); padding-bottom: 5px;}
+<section id="about-institute" class="content-section-offwhite">
+    <div class="container">
+        <h2><i class="fas fa-university"></i> 松尾研究所とは</h2>
+        <p>株式会社松尾研究所（Matsuo Institute）は、東京大学 工学系研究科 松尾・岩澤研究室（通称 松尾研）で培われた最先端AI研究を、企業・社会に橋渡しするために2020年2月に設立された民間法人です。大学・企業・スタートアップが連鎖的にイノベーションを生むエコシステムを形にすることを使命に掲げています。</p>
+        <div class="two-columns"><div class="column"><h3><i class="fas fa-cogs"></i> 事業内容</h3><h4>① AIソリューション開発</h4><ul><li>最先端AI研究の企業・社会への橋渡し</li><li>Tier IVやパナソニックなど大手企業との共同研究</li><li>実用的なAIソリューションの開発・提供</li></ul><h4>② AI人材育成（教育）</h4><ul><li>実践的なAI教育プログラムの提供</li><li>研究室と連携した人材育成</li><li>スタートアップ支援まで幅広く展開</li></ul></div><div class="column"><h3><i class="fas fa-building"></i> 設立の背景</h3><ul><li><strong>2020年2月</strong>: 東京大学 工学系研究科 松尾・岩澤研究室で培われた最先端AI研究を社会実装するため設立</li><li><strong>研究室との連携</strong>: 松尾研究室とビジョンを共有し、研究成果の産業応用を加速</li><li><strong>実績</strong>: Tier IVやパナソニックなど大手企業との共同研究から、スタートアップ支援まで幅広く展開</li><li><strong>エコシステム構築</strong>: 研究・教育・産業の三位一体でイノベーション創出を推進</li></ul></div></div>
+    </div>
+</section>
 
-p { margin: 0 0 1rem 0; }
-ul { margin-bottom: 1rem; }
-i.fas { margin-right: 12px; color: var(--primary-color); }
+<section id="about-startups" class="content-section">
+     <div class="container">
+        <h2><i class="fas fa-rocket"></i> 松尾研発スタートアップとは</h2>
+        <p>「松尾研発スタートアップ®」は、以下の4つの条件を満たしたスタートアップ群を指します（登録商標第6667237号・第6710069号）。ロゴ掲載のない企業や、単に松尾研出身者が在籍しているだけの企業は該当しません。</p>
+        <h3>認定の4条件</h3>
+        <div class="card-list four-items"><div class="info-card"><h4>1. 松尾研出身者が起業</h4><p>松尾研出身者が起業した企業、または松尾研の技術・起業支援を受けて起業した企業。</p></div><div class="info-card"><h4>2. 技術力・事業力</h4><p>技術力・事業力ともに成長可能性が高いと研究室が認定。厳格な審査基準をクリア。</p></div><div class="info-card"><h4>3. 研究室の理念に共感</h4><p>研究室の理念に共感し、エコシステム拡大に協働する意思を保持。</p></div><div class="info-card"><h4>4. 継続的な連携</h4><p>研究室との技術・人材交流を維持し、長期的なパートナーシップを構築。</p></div></div>
+        <h3>認定企業の特典</h3>
+        <div class="two-columns"><div class="column"><ul><li><strong>ロゴ使用権:</strong> 「松尾研発スタートアップ®」ロゴの使用が可能となり、ブランド価値が向上。</li><li><strong>技術支援:</strong> 松尾研・松尾研究所からの継続的な技術サポートと最新研究成果へのアクセス。</li></ul></div><div class="column"><ul><li><strong>ネットワーク:</strong> エコシステム内企業との連携・協業機会により、相互の事業シナジーを創出。</li><li><strong>人材交流:</strong> 研究室との人材交流・採用支援を通じて、優秀な人材を確保。</li></ul></div></div>
+    </div>
+</section>
 
-/* --- Header & Navigation --- */
-.main-header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 10px 40px; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
-.logo { font-family: var(--font-family-heading); font-size: 1.5rem; color: var(--primary-color); }
-.main-nav ul { margin: 0; padding: 0; list-style: none; display: flex; }
-.main-nav li { margin-left: 30px; }
-.main-nav a { color: var(--dark-color); font-weight: 700; position: relative; padding: 5px 0; text-decoration: none; }
-.main-nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: var(--secondary-color); transition: width 0.3s; }
-.main-nav a:hover::after { width: 100%; }
+<section id="history" class="content-section-offwhite">
+    <div class="container">
+        <h2><i class="fas fa-history"></i> エコシステムの歴史</h2>
+        <div class="timeline"><div class="timeline-item"><div class="timeline-year">2011</div><div class="timeline-content"><h3>エコシステムの萌芽</h3><p>松尾研究室での基礎研究開始、深層学習研究の本格化。</p></div></div><div class="timeline-item"><div class="timeline-year">2012</div><div class="timeline-content"><h3>第1世代企業の誕生</h3><p><strong>Gunosy設立</strong>: 情報キュレーション分野でのパイオニア。</p></div></div><div class="timeline-item"><div class="timeline-year">2014</div><div class="timeline-content"><h3>AI技術の実用化加速</h3><p><strong>PKSHA Technology設立</strong>: 企業向けAI技術の本格展開。</p></div></div><div class="timeline-item"><div class="timeline-year">2017</div><div class="timeline-content"><h3>産業特化型企業の台頭</h3><p><strong>DeepX設立</strong>: 建設機械自動化分野への進出。</p></div></div><div class="timeline-item"><div class="timeline-year">2020</div><div class="timeline-content"><h3>エコシステム基盤の確立</h3><p><strong>松尾研究所設立</strong>: エコシステムの中核組織として機能開始。</p></div></div><div class="timeline-item"><div class="timeline-year">2021~</div><div class="timeline-content"><h3>多様化と拡大</h3><p>様々な分野でのスタートアップ創出、プラットフォーム、コンテンツ、産業特化型企業の多様化。</p></div></div><div class="timeline-item"><div class="timeline-year">2024~</div><div class="timeline-content"><h3>新世代の登場</h3><p><strong>JINGS認定</strong>: 受託AI開発を武器とした新興企業の登場。</p></div></div></div>
+    </div>
+</section>
 
-/* --- Main Content Sections --- */
-main { padding-top: 80px; }
-.content-section { padding: 80px 0; background-color: var(--white-color); }
-.content-section-offwhite { background-color: var(--light-color); padding: 80px 0; }
-.section-header { text-align: center; margin-bottom: 50px; }
-.section-header .subtitle { font-size: 1.2rem; color: var(--text-color); max-width: 700px; margin: 10px auto 0; }
-.two-columns { display: flex; gap: 50px; margin-top: 40px; }
-.column { flex: 1; }
+ <section id="chaos-map" class="content-section">
+        <div class="container">
+            <h2><i class="fas fa-sitemap"></i> カオスマップ</h2>
+            <p>事業領域と事業ステージでマッピングした、エコシステムの全体像です。企業名をクリックすると詳細を表示します。</p>
+            <div class="legend"><strong>凡例:</strong><span class="legend-item"><span class="color-box tag-listed"></span> 上場・成熟</span><span class="legend-item"><span class="color-box tag-growth"></span> グロース</span><span class="legend-item"><span class="color-box tag-early"></span> アーリー</span></div>
+            <div class="chaos-map-container">
+                <div class="chaos-map-grid">
+                    <!-- Grid Header -->
+                    <div class="header-cell"></div>
+                    <div class="header-cell category">AI・機械学習</div>
+                    <div class="header-cell category">産業特化</div>
+                    <div class="header-cell category">プラットフォーム</div>
+                    <div class="header-cell category">コンテンツ</div>
+                    <div class="header-cell category">その他</div>
 
-/* --- Specific Components --- */
-.info-card { background: var(--white-color); border: 1px solid var(--border-color); padding: 25px; border-radius: 8px; box-shadow: var(--shadow); }
-.card-list.four-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+                    <!-- Listed Stage Row -->
+                    <div class="header-cell stage">上場・成熟</div>
+                    <div class="map-cell"><span class="company-tag tag-listed" data-company-id="pkshatechnology">PKSHA Technology</span></div>
+                    <div class="map-cell"></div>
+                    <div class="map-cell"><span class="company-tag tag-listed" data-company-id="gunosy">Gunosy</span></div>
+                    <div class="map-cell"></div>
+                    <div class="map-cell"></div>
 
-.timeline { position: relative; margin-top: 40px; border-left: 3px solid var(--primary-color); padding-left: 40px; }
-.timeline-item { position: relative; margin-bottom: 40px; }
-.timeline-year { position: absolute; left: -85px; top: 0; background-color: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: grid; place-items: center; font-family: var(--font-family-heading); font-weight: 700; }
-.timeline-content h3 { margin-top: 0; } .timeline-content p { margin-bottom: 0; }
+                    <!-- Growth Stage Row -->
+                    <div class="header-cell stage">グロース</div>
+                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="aces">ACES</span><span class="company-tag tag-growth" data-company-id="aiq">AIQ</span><span class="company-tag tag-growth" data-company-id="elyza">ELYZA</span><span class="company-tag tag-growth" data-company-id="stathack">StatHack</span><span class="company-tag tag-growth" data-company-id="neoai">NeoAI</span><span class="company-tag tag-growth" data-company-id="deepreneur">Deepreneur</span></div>
+                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="deepx">DeepX</span><span class="company-tag tag-growth" data-company-id="ollo">Ollo</span><span class="company-tag tag-growth" data-company-id="パンハウス">パンハウス</span><span class="company-tag tag-growth" data-company-id="akari">AKARI</span></div>
+                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="readyfor">READYFOR</span><span class="company-tag tag-growth" data-company-id="almondo">Almondo</span></div>
+                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="bestat">bestat</span></div>
+                    <div class="map-cell"><span class="company-tag tag-growth" data-company-id="eques">Eques</span><span class="company-tag tag-growth" data-company-id="igsa">IGSA</span></div>
 
-/* Tabs & Company Cards */
-.tabs { display: flex; border-bottom: 2px solid var(--border-color); margin-bottom: 30px; justify-content: center; }
-.tab-link { background: none; border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: 700; cursor: pointer; color: var(--text-color); position: relative; transition: color 0.3s; }
-.tab-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 4px; background: var(--primary-color); transition: width 0.3s; }
-.tab-link.active { color: var(--primary-color); }
-.tab-link.active::after { width: 100%; }
-.tab-content { display: none; }
-.tab-content.active { display: block; }
-.company-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-.company-card { background: var(--white-color); border-radius: 8px; box-shadow: var(--shadow); display: flex; flex-direction: column; padding: 25px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; }
-.company-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-.company-card p { color: var(--text-color); font-size: 0.95rem; flex-grow: 1; margin: 15px 0 0 0; }
-.card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 15px; }
-.est-year { font-size: 0.9rem; color: #757575; }
-.details-text { font-weight: 700; color: var(--primary-color); transition: color 0.3s; }
-.company-card:hover .details-text { color: var(--secondary-color); }
-.tag { padding: 4px 12px; font-size: 0.8rem; font-weight: 700; border-radius: 12px; margin-bottom: 15px; display: inline-block; }
-.tag-listed { background-color: var(--tag-listed-bg); color: var(--tag-listed-text); border: 1px solid var(--tag-listed-text); }
-.tag-growth { background-color: var(--tag-growth-bg); color: var(--tag-growth-text); border: 1px solid var(--tag-growth-text); }
-.tag-early { background-color: var(--tag-early-bg); color: var(--tag-early-text); border: 1px solid var(--tag-early-text); }
+                    <!-- Early Stage Row -->
+                    <div class="header-cell stage">アーリー</div>
+                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="elith">Elith</span><span class="company-tag tag-early" data-company-id="polaris.ai">PolarisAI</span><span class="company-tag tag-early" data-company-id="epicai">EpicAI</span><span class="company-tag tag-early" data-company-id="integrai">IntegrAI</span></div>
+                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="scien">SCIEN</span><span class="company-tag tag-early" data-company-id="2wins">2WINS</span><span class="company-tag tag-early" data-company-id="proxindustries">Prox</span><span class="company-tag tag-early" data-company-id="三豊ai開発">三豊AI</span></div>
+                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="arcra">ARCRA</span><span class="company-tag tag-early" data-company-id="quackshift">QuackShift</span><span class="company-tag tag-early" data-company-id="sparkplus">Spark+</span></div>
+                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="エムニ">エムニ</span><span class="company-tag tag-early" data-company-id="synclip">SynClip</span><span class="company-tag tag-early" data-company-id="bakutan">BAKUTAN</span><span class="company-tag tag-early" data-company-id="panda">PANDA</span></div>
+                    <div class="map-cell"><span class="company-tag tag-early" data-company-id="athenatechnologies">Athena</span><span class="company-tag tag-early" data-company-id="wanderlustequipmentllc.">Wanderlust</span><span class="company-tag tag-early" data-company-id="jings">JINGS</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Chaos Map */
-.legend { margin: 20px 0; text-align: center; } .legend-item { display: inline-flex; align-items: center; margin: 0 15px; } .color-box { width: 15px; height: 15px; margin-right: 5px; border-radius: 3px; } .chaos-map-container { overflow-x: auto; padding: 20px 0; } .chaos-map-grid { display: grid; grid-template-columns: 120px repeat(5, 1fr); gap: 5px; min-width: 1000px; } .header-cell { padding: 12px; font-weight: 700; text-align: center; border-radius: 5px; } .header-cell.category { background: var(--dark-color); color: var(--white-color); } .header-cell.stage { writing-mode: vertical-rl; text-orientation: mixed; background: var(--dark-color); color: var(--white-color); } .map-cell { background-color: #fafafa; border: 1px solid var(--border-color); border-radius: 5px; padding: 10px; min-height: 120px; display: flex; flex-wrap: wrap; gap: 5px; align-content: flex-start; } .company-tag { background-color: #e0e0e0; color: #424242; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; } .company-tag.tag-listed { background: var(--tag-listed-bg); color: var(--tag-listed-text); } .company-tag.tag-growth { background: var(--tag-growth-bg); color: var(--tag-growth-text); } .company-tag.tag-early { background: var(--tag-early-bg); color: var(--tag-early-text); }
+<section id="future" class="content-section-offwhite">
+    <div class="container">
+        <h2><i class="fas fa-star"></i> エコシステムの価値と今後の展望</h2>
+        <div class="two-columns"><div class="column"><h3>エコシステムの価値</h3><ul class="feature-list"><li><i class="fas fa-tachometer-alt"></i><strong>技術実装加速:</strong> 最先端AI研究を迅速に社会実装し、研究から実用化までの期間を短縮。</li><li><i class="fas fa-sync-alt"></i><strong>人材循環:</strong> 研究室と企業間で優秀な人材が循環し、知識・経験を相互共有。</li><li><i class="fas fa-lightbulb"></i><strong>投資機会創出:</strong> 研究室の技術評価に裏付けられた、質の高い投資機会を提供。</li><li><i class="fas fa-users"></i><strong>知見共有:</strong> エコシステム内の集合知を活用し、技術・事業ノウハウを共有して問題を解決。</li></ul></div><div class="column"><h3>今後の展望</h3><h4>2030年目標</h4><p>認定企業数の倍増（70社目標）、量子コンピューティング等への新領域展開、グローバル展開支援、SDGs達成への貢献を目指します。</p><h4>重点戦略</h4><ul class="feature-list"><li><i class="fas fa-brain"></i>次世代技術（生成AI, LLM）の社会実装</li><li><i class="fas fa-industry"></i>製造業・建設業など伝統産業のDX推進</li><li><i class="fas fa-globe"></i>グローバル市場での競争力強化</li><li><i class="fas fa-leaf"></i>ESG経営と社会価値創出による持続可能な成長</li></ul></div></div>
+    </div>
+</section>
 
-/* ★★★ Style for Clickable Chaos Map Tags ★★★ */
-.chaos-map-grid .company-tag {
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.chaos-map-grid .company-tag:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
+</main>
 
-/* --- ★ MODAL (ENLARGED) DESIGN --- */
-.modal { 
-    display: none; 
-    position: fixed; 
-    z-index: 2000; 
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    height: 100%; 
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.6); 
-}
-.modal-content { 
-    background-color: var(--white-color); 
-    margin: 3vh auto; /* ★ 上下の余白を縮小 */
-    padding: 0;
-    border-radius: 8px; 
-    width: 90%; 
-    max-width: 1100px; /* ★ 最大幅を拡大 */
-    position: relative; 
-    height: 94vh; /* ★ 高さを拡大 */
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-.close-btn { 
-    color: #aaa; 
-    position: absolute; 
-    top: 15px; 
-    right: 25px; 
-    font-size: 28px; 
-    font-weight: bold; 
-    cursor: pointer; 
-    z-index: 10;
-}
-.close-btn:hover {
-    color: var(--dark-color);
-}
+<footer class="main-footer">
+<div class="container"><p><strong>本資料について</strong></p><p>作成日: 2025年6月 | 対象企業: 松尾研発スタートアップ®認定企業35社 | 情報源: 各企業公式情報、松尾研究所公開資料</p><p>© 2025 Matsuo Lab Startup Ecosystem Showcase. All Rights Reserved.</p></div>
+</footer>
 
-.modal-header { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    border-bottom: 1px solid var(--border-color); 
-    padding: 20px 40px; /* ★ 左右のパディングを拡大 */
-    flex-shrink: 0;
-}
-.modal-header h3 {
-    margin: 0;
-    font-size: 1.8rem;
-    color: var(--dark-color);
-}
-.modal-header #modal-tag {
-    margin-left: 20px;
-}
+<div id="company-modal" class="modal">
+<div class="modal-content">
+<span class="close-btn">×</span>
+<div class="modal-header">
+<h3 id="modal-title"></h3>
+<span id="modal-tag"></span>
+</div>
+<div id="modal-body"></div>
+</div>
+</div>
 
-#modal-body { 
-    flex-grow: 1;
-    overflow-y: auto; 
-    padding: 10px 40px 30px 40px; /* ★ 左右のパディングを拡大 */
-}
-#modal-body > h4 {
-    display: none;
-}
-#modal-body h5 {
-    font-size: 1.1rem;
-    color: var(--dark-color);
-    background-color: var(--light-color);
-    padding: 10px 15px;
-    border-left: 5px solid var(--secondary-color);
-    border-bottom: none;
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-#modal-body h5:first-of-type {
-    margin-top: 10px;
-}
-#modal-body p {
-    line-height: 1.8;
-    padding-left: 5px;
-    color: #333;
-}
-#modal-body ul {
-    padding-left: 25px; 
-    line-height: 1.8;
-    color: #333;
-}
-#modal-body li {
-    margin-bottom: 10px;
-}
-#modal-body li::marker {
-    color: var(--secondary-color);
-}
-#modal-body a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom-color 0.3s;
-}
-#modal-body a:hover {
-    border-bottom-color: var(--secondary-color);
-}
-#modal-body h5 + p > a {
-    display: inline-block;
-    margin: 5px 15px 5px 0;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    padding: 5px 15px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: none;
-    transition: background-color 0.3s;
-}
-#modal-body h5 + p > a:hover {
-    background-color: var(--primary-color);
-}
+<div id="company-data" style="display:none;">
+<div data-company="gunosy"><h4>株式会社Gunosy</h4><p><strong>設立年:</strong> 2012年11月14日<br><strong>所在地:</strong> 東京都渋谷区渋谷2-24-12 WeWork渋谷スクランブルスクエア<br><strong>代表者:</strong> 代表取締役社長 竹谷祐哉／代表取締役会長 木村新司</p><h5>主な事業</h5><ul><li>情報キュレーションサービスおよび広告プラットフォームの開発・運営</li></ul><h5>提供サービス・プロダクト</h5><ul><li>スマホニュースアプリ「グノシー」「ニュースパス」</li><li>広告配信プラットフォーム「Gunosy Ads」</li><li>生成AIを活用したIR業務支援「IR Hub」</li><li>アプリ内AIコメント機能 など</li></ul><h5>対象顧客・市場</h5><ul><li>エンドユーザー（モバイルニュース消費者）、広告主（デジタル広告市場）、上場企業のIR部門、ゲーム・エンタメ事業者</li></ul><h5>活用技術</h5><ul><li>独自開発の機械学習／自然言語処理アルゴリズムによるコンテンツ収集・評価・推薦</li><li>ユーザー行動データをもとにした興味連動型広告最適化技術</li><li>生成AIによるドキュメント自動生成（IR Hub）、AIコメント生成機能</li></ul><h5>競争優位性</h5><ul><li>複数メディア横断のデータプールと高精度レコメンデーション</li><li>KDDIとの資本業務提携による大規模ユーザーベースと安定した広告配信基盤</li><li>ニュース配信からエンタメ領域への横展開力</li></ul><h5>ミッション・ビジョン</h5><p>「情報を世界中の人に最適に届ける」 / ビジョン: 高い技術レベルを求める自由と責任の両立、データドリブンな意思決定、自律性重視の組織風土</p><h5>価値観の特徴</h5><p>高い技術レベルを求める自由と責任の両立 / データドリブンな意思決定</p><h5>資金調達歴</h5><ul><li>2015年4月 東証マザーズ上場（IPO）、2017年12月に東証一部・2022年に東証プライムへ市場変更 / M&A・出資:</li><li>2025年3月 Gホールディングスを子会社化（ゲーム・エンタメ領域強化）</li><li>投資先「slice Small Finance Bank」（インド）など</li></ul><h5>提携・導入事例</h5><ul><li>KDDI「ニュースパス」共同展開</li><li>auサービスToday内でAKB48動画1,000万回再生達成</li><li>上場企業のIR英語開示を自動化する「IR Hub」導入</li></ul><h5>リンク</h5><p><a href="https://gunosy.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://gunosy.co.jp/recruit" target="_blank" rel="noopener noreferrer">採用情報</a> | </p></div>
+<div data-company="pkshatechnology"><h4>株式会社PKSHA Technology</h4><p><strong>設立年:</strong> 2012年10月<br><strong>所在地:</strong> 東京都文京区本郷2-35-10 本郷瀬川ビル4F<br><strong>代表者:</strong> 代表取締役 上野山 勝也</p><h5>主な事業</h5><ul><li>AIソリューション事業（PKSHA ReSearch／PKSHA Enterprise AI）</li><li>AI SaaS事業（チャットボット、ボイスボット、FAQ、音声解析、AIヘルプデスクなど）</li></ul><h5>提供サービス・プロダクト</h5><ul><li>PKSHA ReSearch：自然言語処理、画像認識、機械学習/深層学習のアルゴリズム研究開発</li><li>PKSHA Enterprise AI：業界・業務特化型AIソリューション</li><li>AI SaaS製品群：PKSHA Chatbot/Voicebot、PKSHA FAQ、PKSHA Speech Insight、PKSHA AI Helpdesk、PKSHA AI Powered Data Entry（保険業界向け）</li></ul><h5>対象顧客・市場</h5><ul><li>大手金融・保険・製造・小売・通信・公共機関など国内エンタープライズ企業約430社</li><li>コールセンター、バックオフィス、保険査定、HR・採用領域など</li></ul><h5>活用技術</h5><ul><li>自然言語処理、画像認識、機械学習/深層学習、OCR、LLM（PKSHA LLMs）</li><li>東京大学松尾研究室発の基盤的アルゴリズムと産学共同開発成果</li><li>165種類以上のアルゴリズムを商用化、自律動作するAIエージェント7,000体超</li></ul><h5>競争優位性</h5><ul><li>研究開発（PKSHA ReSearch）と社会実装（PKSHA Enterprise AI／AI SaaS）の循環モデル</li><li>日本語特化のLLM＋OCR連携による非定型書類高精度処理（93%精度実証）</li><li>上場企業としての安定基盤と大手顧客実績、業種横断で培ったドメイン知見</li></ul><h5>ミッション・ビジョン</h5><ul><li>Mission「未来のソフトウエアを形にする」</li><li>Vision「人とソフトウエアの共進化」</li></ul><h5>価値観の特徴</h5><ul><li>人の多様性とエンパワーメント、喜びとつながりを社会に広げる</li><li>未来志向・信頼のうねり・外界との共振化・個の才能発現・専門性の連鎖・アクションドリブン</li></ul><h5>資金調達歴</h5><ul><li>2018年11月 東証マザーズ（現プライム）上場（証券コード3993）</li><li>資本金1,000万円（設立時）→上場後は自力成長で拡大</li></ul><h5>提携・導入事例</h5><ul><li>AWS／Azure連携、トヨタ、ベネッセ、シノケングループ、Workport、複数生命保険会社、MaaS駐車場事業者など</li><li>東北大学、AIロボット協会との共同研究・業界カンファレンス発表</li></ul><h5>リンク</h5><p><a href="[https://www.pkshatech.com](https://www.pkshatech.com/)" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://www.pkshatech.com/recruit" target="_blank" rel="noopener noreferrer">採用情報</a> | <a href="https://twitter.com/pkshatech" target="_blank" rel="noopener noreferrer">SNS</a></p></div>
+<div data-company="deepx"><h4>株式会社DeepX（DeepX, Inc.）</h4><p><strong>設立年:</strong> 2016年4月<br><strong>所在地:</strong> 東京都文京区湯島3丁目21-4 第一三倉ビル3階<br><strong>代表者:</strong> 冨山 翔司、那須野 薫</p><h5>主な事業</h5><ul><li>建設機械・重機の自動運転システム開発および製造現場のデジタル化支援</li></ul><h5>提供サービス・プロダクト</h5><ul><li>建機自動運転システム（ケーソンショベル、油圧ショベル、移動式クレーン等）</li><li>現場可視化プラットフォーム「GeoViz」（リアルタイム3Dデジタルツイン）</li><li>今後リリース予定の自社パッケージ・機能ライセンスモデル</li></ul><h5>対象顧客・市場</h5><ul><li>大手ゼネコン、建設機械メーカー、製造業・プラント業界</li></ul><h5>活用技術</h5><ul><li>深層学習を用いた画像認識・環境認識アルゴリズム</li><li>制御工学に基づく遠隔・自動運転制御系ソフトウェア</li><li>大規模データを活用した現場向けオペレーション最適化</li><li>東京大学発の研究シーズを事業化</li></ul><h5>競争優位性</h5><ul><li>ニューマチックケーソン工法向けの多台同時自動化技術は世界初級</li><li>建機資格を持つエンジニアによる現場理解に基づく開発体制</li><li>Vモデルとアジャイルを併用した品質重視の開発プロセス</li><li>デジタルツイン「GeoViz」と自動運転を組み合わせたトータルソリューション</li></ul><h5>ミッション・ビジョン</h5><p>「あらゆる機械を自動化し、世界の生産現場を革新する」</p><h5>価値観の特徴</h5><ul><li>現場重視：ハードウェア稼働現場での課題解決を最優先</li><li>前向き：トライ＆エラーを恐れず学び続ける姿勢</li><li>当事者意識：メンバー一人一人の裁量とリーダーシップ尊重</li><li>透明性：タスクや情報をオープンに共有</li></ul><h5>資金調達歴</h5><ul><li>2020年7月：総額約16億円の第三者割当増資（IGPIグループ、SBIインベスト、藤田建設、スパークス・グループ等）</li><li>Smartround「シリーズB想定」、評価額約85億7,100万円（2020/06時点）</li></ul><h5>提携・導入事例</h5><ul><li>オリエンタル白石とケーソンショベル自動運転（2023年実証）</li><li>藤田建設と油圧ショベル自動運転（2023年実証）</li><li>タダノとクレーン荷振れ抑制自動化技術（2022年開発）</li><li>建設DX研究所加入、SBIR実証プロジェクト採択</li></ul><h5>リンク</h5><p><a href="https://deepx.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="readyfor"><h4>READYFOR株式会社</h4><p><strong>設立年:</strong> 2014年7月 （サービス開始は2011年3月）<br><strong>所在地:</strong> 東京都千代田区一番町8-7F<br><strong>代表者:</strong> 米良はるか、樋浦直樹</p><h5>主な事業</h5><ul><li>クラウドファンディング事業、ファンドレイジング・コンサルティング事業、プログラム事業、フィランソロピー事業</li></ul><h5>提供サービス・プロダクト</h5><ul><li>READYFOR（寄付型・購入型クラウドファンディングプラットフォーム）</li><li>READYFOR Charity（寄付型CF）</li><li>READYFOR ふるさと納税／SDGs／College</li><li>継続寄付（マンスリーサポーター）</li><li>遺贈寄付サポートサービス</li><li>各種基金・プログラムの企画・運営</li></ul><h5>対象顧客・市場</h5><ul><li>個人実行者（研究者、アーティスト、起業家、地域団体など）</li><li>NPO・社会貢献団体・医療機関・教育機関・地方自治体・企業</li></ul><h5>活用技術</h5><ul><li>ウェブプラットフォーム上でのプロジェクト管理システム</li><li>データ分析に基づく成功率向上支援（達成率75%超）</li><li>キュレーター（プロジェクト伴走者）による戦略設計・運用支援</li></ul><h5>競争優位性</h5><ul><li>リサーチから戦略設計、実行まで一気通貫で支援する「伴走型サービス」</li><li>2011年開始の国内初クラウドファンディングとしての累計実績（掲載件数1万件超、累計支援額約100億円）</li><li>「乳化」を掲げたビジネスとエンジニアリングの融合文化</li></ul><h5>ミッション・ビジョン</h5><ul><li>“みんなの想いを集め、社会を良くするお金の流れをつくる”</li><li>“誰もがやりたいことを実現できる世の中をつくる”</li></ul><h5>価値観の特徴</h5><ul><li>サポート志向：すべてのユーザーに「やってよかった」を届ける</li><li>オープンコミュニケーション（“open by default”）</li><li>エンジニアリングとビジネスの融和（乳化）</li></ul><h5>資金調達歴</h5><ul><li>2018年10月：約5.3億円の第三者割当増資</li><li>2019年1月：約4.2億円の第三者割当増資および借入</li><li>2020年：約10億円の第三者割当増資</li></ul><h5>提携・導入事例</h5><ul><li>北都銀行、栃木銀行、JTBグループ、J:COM、宮城県庁「みやぎ食と農CF支援事業」</li><li>国立科学博物館、大学・研究機関、地方自治体、病院、Jリーグクラブなど多数</li></ul><h5>リンク</h5><p><a href="[https://corp.readyfor.jp](https://corp.readyfor.jp/)" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="aces"><h4>株式会社ACES</h4><p><strong>設立年:</strong> 2017年11月<br><strong>所在地:</strong> 東京都文京区湯島2-31-14 ルーシッドスクエア湯島3階<br><strong>代表者:</strong> 田村浩一郎</p><h5>主な事業</h5><ul><li>AIトランスフォーメーション事業（DXパートナーサービス）</li><li>AIソフトウェア事業（SaaS提供）</li></ul><h5>提供サービス・プロダクト</h5><ul><li>DXパートナーサービス：業界横断のAI導入・PoC支援、要件定義から運用まで一貫支援</li><li>AIソフトウェア：法人向けチャットボットプラットフォーム「ACES ChatHub」、議事録作成・要約・解析ツール「ACES Meet」、生成AIビジネス活用プログラム 他</li></ul><h5>対象顧客・市場</h5><ul><li>金融（保険、銀行）、小売、介護・ヘルスケア、人材、建設、スポーツなどリアル産業を中心に、大企業から中堅・中小企業まで幅広く対応</li></ul><h5>活用技術</h5><ul><li>東大・松尾研究室発のDeep Learning技術、大規模言語モデル（LLM）や生成AI</li><li>自社開発のアルゴリズムモジュール（Communication Intelligence／Human Digital Twin／Mobility Intelligenceなど）</li></ul><h5>競争優位性</h5><ul><li>アカデミア直結による最先端技術の高速社会実装</li><li>博士号保有者や研究室出身エンジニア多数在籍によるアルゴリズム設計力</li><li>Fact based, Gemba first の運用文化で現場起点の迅速検証・改善を徹底</li></ul><h5>ミッション・ビジョン</h5><ul><li>「アルゴリズムで、社会をもっとシンプルに」</li><li>属人的知見や業務をデジタル化し、複雑・非効率・非合理のない社会を実現</li></ul><h5>価値観の特徴</h5><ul><li>情報の透明性（オープンチャンネル運用、社内Wikiによるナレッジ共有）</li><li>現場重視の意思決定（Gemba first）</li><li>データドリブンで信頼を構築（Fact based, build trust）</li></ul><h5>資金調達歴</h5><ul><li>設立以降、シード～シリーズA相当の外部資金調達を実施（累計数億円規模）</li><li>元経産省幹部など社外取締役の招聘</li></ul><h5>提携・導入事例</h5><ul><li>J-POWER：危険予知・労災リスク軽減AIシステム構築</li><li>バンダイナムコ研究所：モーションキャプチャAIデータセット販売</li><li>ブレイン・ラボ「CAREERPLUS」との連携による面談データ自動同期</li><li>YKK AP：作業員の不安全行動検知プロジェクト</li></ul></div>
+<div data-company="aiq"><h4>AIQ株式会社</h4><p><strong>設立年:</strong> 非公開<br><strong>所在地:</strong> 非公開<br><strong>代表者:</strong> 代表取締役社長　渡辺　求</p><h5>主な事業</h5><ul><li>個人の「興味・価値観・ライフスタイル」を高精度に再現するデジタルクローンの研究開発・提供</li><li>「HUMANISE AI」を核としたデジタルクローンエコシステムの構築</li></ul><h5>提供サービス・プロダクト</h5><ul><li>HUMANISE AIプラットフォーム（特許出願中約40件）</li><li>企業向けデジタルスタッフ（小売・アパレル、飲食店向け実証実験）</li><li>顧客視点AIクローン（化粧品・住宅開発向け）</li><li>DCEP（デジタルクローンエコシステムプロジェクト）</li></ul><h5>対象顧客・市場</h5><ul><li>B2Bマーケティング／DX部門</li><li>小売・アパレルショップ、化粧品メーカー、飲食・外食チェーン、住宅メーカーほか</li></ul><h5>活用技術</h5><ul><li>松尾研究室発のプロファイリング技術に基づく深層学習モデル</li><li>個人データを内面（価値観・興味）レベルで解析する「HUMANISE AI」特許技術</li><li>生成済みクローン数500体以上（2025年1月時点）</li></ul><h5>競争優位性</h5><ul><li>「効率」や「タスク実行」だけでなく「個性」をコアに据えたデジタルクローン</li><li>特許数／利用企業数（1,100社以上）／メディア認定実績多数</li><li>研究室レベルのプロファイリング技術を商用レベルに昇華</li></ul><h5>ミッション・ビジョン</h5><ul><li>「一人一体 デジタルクローンを持つ時代を創る」</li><li>「個性を、価値に。」</li><li>AIと人間が支え合い共存する社会の実現</li></ul><h5>価値観の特徴</h5><ul><li>個性重視／人間らしさの尊重</li><li>24時間365日、どこでも活動するクローンによる社会貢献</li><li>社会課題解決への強いコミットメント</li></ul><h5>資金調達歴</h5><ul><li>正式な調達ラウンド公表なし（複数の企業・投資家から支援・出資受領）</li><li>Microsoft for Startups採択、NVIDIA Inception認定、経産省J-Startup選定、NEXTユニコーン3年連続</li></ul><h5>提携・導入事例</h5><ul><li>積水ハウス向け「AIクローンオーナー」サービス</li><li>飲食店向けデジタルスタッフ実証実験</li><li>カシオ計算機とのウェアラブル×デジタルクローン共同プロジェクト</li><li>DCEP（デジタルクローンエコシステム）</li></ul></div>
+<div data-company="bestat"><h4>bestat株式会社</h4><p><strong>設立年:</strong> 2018年6月<br><strong>所在地:</strong> 東京都文京区本郷6-25-14<br><strong>代表者:</strong> 代表取締役　松田 尚子</p><h5>主な事業</h5><ul><li>3Dデジタルコンテンツの自動生成・管理・活用クラウドサービスの開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>[3D.ai](http://3d.ai/)：スマホ撮影だけでAIによる3Dモデル生成～ブラウザ/AR/VR表示までをワンストップで行うクラウドプラットフォーム</li><li>3D.Core：特許取得済みアルゴリズムによる高精度3Dデータ自動生成サービス／API</li><li>デジタルツイン構築支援</li></ul><h5>対象顧客・市場</h5><ul><li>製造業、建設業、インフラ業、Eコマース、BtoB向けEC、エンタメ・CG制作会社、廃炉作業など社会インフラ分野</li></ul><h5>活用技術</h5><ul><li>東京大学 松尾豊研究室発の行列演算強化型画像処理AIアルゴリズム（特許取得）</li><li>生成系AIを含む複数の3D再構築ライブラリ</li><li>WebGLを用いたブラウザ/AR/VRレンダリング</li><li>多種多様な撮影機器（スマホ、360°カメラ、一眼レフ、ドローン、3Dスキャナ等）対応</li></ul><h5>競争優位性</h5><ul><li>従来の手作業比で60～80％を自動化し、誤差1％以内（最大99％精度）で短時間・低コストに3Dモデル生成</li><li>生成からデータ管理、CAD変換、ブラウザ/AR・VR出力までを一気通貫で提供</li><li>スマホ撮影のみで現場キャプチャできる操作性と、軽量メッシュ化によるデータ共有・運用性</li></ul><h5>ミッション・ビジョン</h5><p>「創造する全ての人に、創造する自由と楽しみを」「世界の人々の毎日の感動の絶対数を増やす」</p><h5>価値観の特徴</h5><p>顧客の“ペイン”解決を重視し、最先端AI技術の社会実装によってまだ形になっていない市場を自ら創出するスタートアップマインド</p><h5>資金調達歴</h5><p>2019年シードラウンド（調達額約8,000万円、ポスト評価額約9,700万円相当）</p><h5>提携・導入事例</h5><ul><li>東京パワーテクノロジー：福島第一原子力発電所廃炉作業向けに『3D.Core』を提供</li><li>リコー「RICOH360」との協業による『3D.Core』連携</li><li>スターマーケティングジャパンの3D動く説明書導入ほか多数</li></ul><h5>リンク</h5><p><a href="https://bestat-data.com/contact" target="_blank" rel="noopener noreferrer">問い合わせ</a></p></div>
+<div data-company="elyza"><h4>株式会社ELYZA</h4><p><strong>設立年:</strong> 2018年9月<br><strong>所在地:</strong> 東京都文京区本郷3-15-9 SWTビル6F<br><strong>代表者:</strong> 代表取締役CEO 曽根岡侑也</p><h5>主な事業</h5><ul><li>AIリサーチ＆ソリューション事業（大手企業向けのLLM研究開発支援、システム実装）</li><li>AI SaaS事業（生成AIを活用した業務・DX支援ツールの開発・提供）</li></ul><h5>提供サービス・プロダクト</h5><ul><li>ELYZA LLM for JP（Meta社LlamaシリーズやQwenベースの日本語特化LLMシリーズ）</li><li>ELYZA-Thinking／ELYZA-Shortcut（論理的思考能力強化モデル、応答高速化モデル）</li><li>カスタムLLM共同開発、API／クラウド型サービスの提供</li></ul><h5>対象顧客・市場</h5><ul><li>大手企業（メディア、交通インフラ、金融、人材など）   / 自治体・官公庁（デジタル庁技術検証受託）   / 研究機関および生成AI導入を検討する事業者</li></ul><h5>活用技術</h5><ul><li>独自の日本語追加事前学習・指示学習手法（Depth Up-Scaling、Chain of Thought／MCTS模倣学習）</li><li>Qwen-32B、Llama-3.1-70B/8B改良モデル、Llama-2-13B日本語版 など多数公開</li><li>政府プロジェクト「GENIAC」での計算資源支援を通じた大規模モデル開発</li></ul><h5>競争優位性</h5><ul><li>日本語におけるLLM性能でGPT-4相当以上を達成（各種ベンチマーク、ELYZA Tasks 100）</li><li>日本語特化かつ商用利用可能なオープンモデル提供（LLAMA 3 COMMUNITY LICENSE、Apache 2.0）</li><li>Reasoning Model開発（o1-mini相当の論理思考能力強化）とShortcut Modelによる高速応答</li></ul><h5>ミッション・ビジョン</h5><ul><li>「未踏の領域で、あたりまえを創る」</li><li>「LLMを社会実装し、研究成果を可能な限り公開・提供する」</li></ul><h5>価値観の特徴</h5><ul><li>研究投資の継続とオープンソース公開</li><li>松尾研究室発の研究開発体制と学術的厳密性</li><li>事業フェーズを問わず「社会実装」を重視</li></ul><h5>資金調達歴</h5><ul><li>2019–2023年：シード～シリーズA相当で推定自己資金・プレシード調達</li><li>2024年3月：KDDIグループ（KDDI 43.4％、KDDI Digital Divergence 10.0％出資）により連結子会社化</li></ul><h5>提携・導入事例</h5><ul><li>KDDIグループとの資本業務提携（汎用・領域特化LLM共同開発、API・DX支援）</li><li>野村総合研究所、KDDIとの三社協業（高セキュアLLMソリューション提供）</li><li>デジタル庁技術検証、JR西日本グループ取材記事掲載</li></ul><h5>リンク</h5><p><a href="[https://elyza.ai](https://elyza.ai/)" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://elyza.ai/recruit" target="_blank" rel="noopener noreferrer">採用情報</a> | <a href="https://huggingface.co/elyza" target="_blank" rel="noopener noreferrer">関連リンク</a> | <a href="https://open.talentio.com/r/1/c/elyza/homes/2507" target="_blank" rel="noopener noreferrer">関連リンク</a></p></div>
+<div data-company="ollo"><h4>株式会社Ollo（Ollo Inc.）</h4><p><strong>設立年:</strong> 2019年2月<br><strong>所在地:</strong> 〒113-0033　東京都文京区本郷2丁目38-16　いちご本郷三丁目ビル703<br><strong>代表者:</strong> 情報非公開（取締役会長に岡本浩一郎氏〈元弥生株式会社代表取締役社長〉就任）</p><h5>主な事業</h5><ul><li>製造現場の作業解析・最適化を目的としたAIソフトウェアの開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>Ollo Factory：カメラ映像をアップロードするだけで、AIが繰り返し作業を自動検出・計測し、生産性向上策を可視化する画像認識ソフトウェア</li></ul><h5>対象顧客・市場</h5><p>自動車部品、医療機器、電子機器などの製造業／工場現場の運用改善ニーズ</p><h5>活用技術</h5><ul><li>東京大学松尾研究室発の高度な画像処理・ディープラーニングアルゴリズム</li><li>動作サイクル検出、タイムスタディ自動化技術（NeurIPS2022採択の研究成果）</li></ul><h5>競争優位性</h5><ul><li>センサー不要で既存カメラ映像のみで解析可能／カメラ機種を問わない汎用性</li><li>動画アップロード＋サイクル設定のみで即分析開始、24時間365日の連続計測</li><li>学術成果をベースにした高精度かつ軽量な推論</li></ul><h5>ミッション・ビジョン</h5><p>「現場の最適化を、驚くほどシンプルに。」</p><h5>価値観の特徴</h5><ul><li>シンプルさと即効性の追求</li><li>研究成果の社会実装による現場インパクト重視</li><li>顧客との共創による継続的改善</li></ul><h5>資金調達歴</h5><p>非公開</p><h5>提携・導入事例</h5><ul><li>2024.11　GEヘルスケア・ジャパンへの導入</li><li>2024.09　マレリ株式会社でのトライアル導入</li><li>2024.06　住友電装株式会社での採用・グローバル展開開始</li></ul><h5>リンク</h5><p><a href="https://www.olloinc.com/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://www.olloinc.com/careers" target="_blank" rel="noopener noreferrer">採用情報</a> | <a href="https://www.linkedin.com/company/ollo-inc" target="_blank" rel="noopener noreferrer">SNS</a></p></div>
+<div data-company="stathack"><h4>株式会社StatHack</h4><p><strong>設立年:</strong> 2021年8月<br><strong>所在地:</strong> 東京都文京区本郷6丁目25番14号（HONGO EGG内）<br><strong>代表者:</strong> 代表取締役CEO　松葉 亮人</p><h5>主な事業</h5><ul><li>AIコンサルティングおよび受託開発</li><li>自社SaaSサービスの開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>Count AI（後に「カミナシ CountAI」として統合）：スマホ／タブレットで撮影した画像から製品個数を自動カウントし、クラウド上に記録する画像認識AIツール</li><li>外観検査・員数検査自動化ソリューション（Deep Learningベースの画像認識モデル）</li></ul><h5>対象顧客・市場</h5><ul><li>製造業（鉄鋼・パイプ・バルブ・電線・建材など）の現場DX需要</li><li>工場の非定型検査工程を効率化したいノンデスクワーカー向け</li></ul><h5>活用技術</h5><ul><li>東京大学松尾研究室発のDeep Learning技術</li><li>独自開発の物体検出・画像分類モデルを用いた高精度カウントアルゴリズム</li><li>クラウド連携による検査結果のリアルタイムデータ化</li></ul><h5>競争優位性</h5><ul><li>大学発スタートアップならではの最新研究成果の迅速実装</li><li>専用ハード不要でスマホ利用可能なローコードSaaSモデル</li><li>Count AIのUX設計に注力し、非エンジニアでも使いやすいインタフェース</li><li>受託→自社サービス化→大手現場DXプラットフォームとのM&A統合という成長パス</li></ul><h5>ミッション・ビジョン</h5><p>「業界最高のUXでソフトウェアを提供し、働く人の幸せを達成する」</p><h5>価値観の特徴</h5><ul><li>ノンデスクワーカーの課題解決を第一に考える現場志向</li><li>技術革新と顧客体験（UX）の両立</li><li>スピード感あるPoCから本番導入まで一気通貫でサポート</li></ul><h5>資金調達歴</h5><p>明示的な外部調達情報は公表なし。設立1期目から黒字化を達成。</p><h5>提携・導入事例</h5><ul><li>鉄筋メーカー、資材レンタル企業など複数の製造現場でCount AI導入</li><li>2023年10月：現場DXプラットフォーム「カミナシ」を提供する株式会社カミナシが全株式取得、完全子会社化</li><li>2024年6月：カミナシへの吸収合併により「カミナシ CountAI」として正式統合</li></ul><h5>リンク</h5><p><a href="https://www.stathack.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="パンハウス"><h4>株式会社パンハウス (PanHouse, Inc.)</h4><p><strong>設立年:</strong> 2021年4月<br><strong>所在地:</strong> 東京都文京区本郷6-25-14 宗文館ビル3階<br><strong>代表者:</strong> 代表取締役　岡本 弘野</p><h5>主な事業</h5><ul><li>企業向けAIソリューションの企画・開発・導入支援</li></ul><h5>提供サービス・プロダクト</h5><p></p><h5>対象顧客・市場</h5><ul><li>製造業の品質管理、流通・小売業のマーケティング／トレーサビリティ、製造現場のDX推進を図る企業</li></ul><h5>活用技術</h5><p></p><h5>競争優位性</h5><p></p><h5>ミッション・ビジョン</h5><ul><li>「煩雑で工数のかかる業務を効率化し、ビジネスをスマートにする」</li><li>「チャレンジングな環境で、常に『圧倒的成長』し続ける」</li></ul><h5>価値観の特徴</h5><ul><li>最先端技術の社会実装重視</li><li>急成長環境での学びとチャレンジ</li><li>DX推進を通じた社会変革志向</li></ul><h5>資金調達歴</h5><p>2021年12月　Deep30投資事業有限責任組合を引受先とした第三者割当増資（調達額非公開、評価額推定50百万円）</p><h5>提携・導入事例</h5><ul><li>Deep30との資本提携（2021年）</li><li>生成系AIを活用したジュエリー事業「Gem AI Studio」立ち上げ（2023年10月発表）</li></ul><h5>リンク</h5><p><a href="[https://panhouse.jp](https://panhouse.jp/)" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://panhouse.jp/career" target="_blank" rel="noopener noreferrer">採用情報</a> | <a href="https://twitter.com/panhouse_inc" target="_blank" rel="noopener noreferrer">Twitter</a></p></div>
+<div data-company="akari"><h4>株式会社AKARI (AKARI Inc.)</h4><p><strong>設立年:</strong> 2022年6月（登記日）※公式公開情報による<br><strong>所在地:</strong> 東京都港区海岸1-10-30 芝浦ルネサイトタワー（本社オフィス）<br><strong>代表者:</strong> 非公開（登記上の代表取締役は社外取締役を含むため公式公開情報を参照）</p><h5>主な事業</h5><ul><li>AIモデルの学習効率を高めるトレーニングデータ生成・管理プラットフォームの企画・開発・運営</li></ul><h5>提供サービス・プロダクト</h5><ul><li>AKARI Label Studio：画像／映像／テキストのアノテーション支援ツール</li><li>Data Pipeline API：教師データの前処理・品質評価・メタデータ管理機能付きREST API</li><li>Active Data Selection：アクティブラーニングに基づくサンプル自動選別エンジン</li></ul><h5>対象顧客・市場</h5><ul><li>自動車、製造、物流、ヘルスケアなどでAIを内製・導入する事業会社</li><li>AIサービスの開発ベンダー／SIer</li><li>研究機関および大学発ベンチャー</li></ul><h5>活用技術</h5><ul><li>自己教師あり学習(SimCLR等)を応用した特徴抽出による初期クラスタリング</li><li>データシャプリー値に基づくサンプル重要度スコアリング</li><li>半教師あり・弱教師あり技術を組み合わせたアクティブラーニング</li><li>人手ラベリングとモデル推論をループさせるヒューマン・イン・ザ・ループ設計</li></ul><h5>競争優位性</h5><ul><li>東京大学松尾研究室発のアルゴリズムをベースに、研究段階から事業適用まで一貫</li><li>国内企業の日本語／中文対応などローカルニーズへのチューニング実績</li><li>アノテーションだけでなく「前処理→サンプル選定→品質評価→再学習」までのエンドツーエンド提供</li></ul><h5>ミッション・ビジョン</h5><ul><li>「高品質なデータでAIを民主化する」</li><li>「データ準備のコストと時間をゼロに近づけ、誰もがAIを使える世界へ」</li></ul><h5>価値観の特徴</h5><ul><li>アカデミア発の技術を“きちんと使えるプロダクト”に落とし込む実装重視</li><li>ユーザーとの共創を重視し、PoC段階から並走するハンズオン体制</li><li>社内外でのナレッジシェアを推奨するオープンマインド</li></ul><h5>資金調達歴</h5><ul><li>2023年4月：シードラウンド（総額約1.2億円、大学TLOおよび複数ベンチャーキャピタル）</li><li>2024年5月：シリーズAラウンド（総額約5億円、国内VC複数より調達）</li></ul><h5>提携・導入事例</h5><ul><li>大手自動車メーカーで自律走行用映像データのラベリング最適化PoC実施中</li><li>通信キャリア子会社とネットワーク障害レポートのテキストアノテーション共同開発</li></ul><h5>リンク</h5><p><a href="https://www.akari.ai/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://www.akari.ai/careers" target="_blank" rel="noopener noreferrer">採用情報</a></p></div>
+<div data-company="eques"><h4>株式会社EQUES</h4><p><strong>設立年:</strong> 2022年2月<br><strong>所在地:</strong> 東京都文京区本郷3丁目30番10号 本郷K&Kビル2F<br><strong>代表者:</strong> 岸 尚希（CEO）</p><h5>主な事業</h5><ul><li>AIソリューション開発（コンサルティングからPoC・本番導入まで一気通貫）</li><li>Generative AIの研究開発およびプロダクト化</li><li>業界特化型AI SaaS提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>伴走型AIプロジェクト（クライアントの根本課題抽出～実装支援）</li><li>業務支援AIプロダクト（製薬QA文書の自動生成「QAI-Generator」等）</li><li>挑戦的研究開発（ゲーム会社向け3Dモンスター生成AIなど）</li></ul><h5>対象顧客・市場</h5><ul><li>製薬・医療（品質保証／QA）</li><li>小売・建設などの業務DX領域</li><li>ゲーム・アニメ・広告業界におけるクリエイティブAI</li><li>一般企業のAI導入コンサルティング</li></ul><h5>活用技術</h5><ul><li>深層学習（Generative AI含む）、統計学、数理最適化、クラスタリング最適化</li><li>東大・松尾研究室発の学術成果（テラヘルツ波通信、ハプティクスなど）</li></ul><h5>競争優位性</h5><ul><li>松尾研出身研究者が創業／半数を占める組織による最先端アルゴリズムの迅速実装力</li><li>産学連携のネットワークを活かした新技術獲得のスピード</li><li>本質的課題解決に向き合うコンサルティング型アプローチ</li></ul><h5>ミッション・ビジョン</h5><p>最先端の機械学習技術をあやつり社会の発展を加速する</p><h5>価値観の特徴</h5><p></p><h5>資金調達歴</h5><p>非公開（設立初期のシード相当と推定）</p><h5>提携・導入事例</h5><ul><li>大手ゲーム会社（セガ）と3Dモンスター生成AI共同開発</li><li>製薬企業向けAI SaaS「QAI-Generator」リリース・導入</li><li>Startup JAPAN EXPO 2025 出展など</li></ul><h5>リンク</h5><p><a href="[https://www.eques.co.jp](https://www.eques.co.jp/)" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="almondo"><h4>株式会社Almondo</h4><p><strong>設立年:</strong> 2023年2月<br><strong>所在地:</strong> 東京都文京区本郷2-35-10 本郷瀬川ビル4F<br><strong>代表者:</strong> 代表取締役CEO 伊藤 滉太</p><h5>主な事業</h5><ul><li>法人向けAIソリューション事業（AI活用の企画立案から開発・実運用まで一気通貫で提供）</li></ul><h5>提供サービス・プロダクト</h5><ul><li>AIナレッジ基盤構築（複雑なマニュアルやログから半自動で知識を抽出・構造化）</li><li>独自モデル・アルゴリズム開発（オンプレ可の特化型言語モデルSLM、専門性対応検索アルゴリズム）</li><li>AIアプリケーション構築（RAG型AIエージェント、Chatbot/Voicebotによる対話インターフェース）</li></ul><h5>対象顧客・市場</h5><p>大手企業（DCM、東京ガス、IHI、CTC、日産クリエイティブサービスなど）、自治体を含むB2B市場</p><h5>活用技術</h5><p></p><h5>競争優位性</h5><p></p><h5>ミッション・ビジョン</h5><ul><li>“テクノロジーで、あらゆる「ひと」の力を解き放つ”</li><li>“全産業にKnowledgeを組み込んだAgentを実装し、仕事・生活を変革する”</li><li>行動指針（Values）：</li><li>1. コトに向き合う（本質的価値の共創）</li><li>2. 実践にこだわる（高速な挑戦と学びから解を生み出す）</li><li>3. 力を掛け合わせる（異なる強みを信頼し、オールウィンを目指す）</li></ul><h5>価値観の特徴</h5><p></p><h5>資金調達歴</h5><ul><li>創業時の自己資本（資本金0.25百万円）、PKSHA Technologyによる出資（持分20%）、松尾豊氏（持分5%）</li><li>2024年12月：DXソリューション企業テンダが51%株式を取得（取得額510百万円、企業価値約10億円）</li></ul><h5>提携・導入事例</h5><ul><li>DCM／東京ガス／IHI／伊藤忠テクノソリューションズ（CTC）など大手企業複数社でAIナレッジ基盤・エージェント導入</li><li>日産クリエイティブサービス「NICS AI Chat」でFY24優秀賞受賞</li><li>松尾研・iU情報経営イノベーション専門職大学からのアドバイザリー体制</li></ul><h5>リンク</h5><p><a href="[https://almondotech.com](https://almondotech.com/)" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://almondotech.com/members" target="_blank" rel="noopener noreferrer">採用情報</a></p></div>
+<div data-company="neoai"><h4>株式会社neoAI</h4><p><strong>設立年:</strong> 2022年8月<br><strong>所在地:</strong> 東京都千代田区神田須田町2-5 東京神田須田町ビル2階（本社）<br><strong>代表者:</strong> 代表取締役社長 CEO 千葉 駿介</p><h5>主な事業</h5><ul><li>企業向け業務特化型生成AIソリューションの開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>neoAI Chat：ドキュメント連携・ノーコードで業務別AIアシスタントを作成できる生成AIプラットフォーム</li><li>独自日本語LLMとRAG（Retrieval Augmented Generation）アルゴリズムの開発</li><li>導入コンサルティング、PoC支援、運用サポート</li></ul><h5>対象顧客・市場</h5><ul><li>金融機関、製造業、電力会社、医療機関、不動産などエンタープライズ領域</li><li>企業内の非構造化データ活用による生産性向上・業務効率化ニーズ市場</li></ul><h5>活用技術</h5><ul><li>東京大学松尾研究室発の日本語特化大規模言語モデル（neoLLMモジュール）</li><li>高精度RAGアルゴリズムによる検索強化型生成AI</li><li>独自OCR／表解析技術による非構造化データの構造化処理</li><li>オンプレミス運用対応で機密データを社内閉域で処理可能</li></ul><h5>競争優位性</h5><ul><li>日本語ドキュメントへの適応精度とテンプレート群による業務特化スピード</li><li>大手クラウド型サービスが難しいオンプレミス運用とセキュリティ確保</li><li>50社超（金融・電力等）への導入実績に裏打ちされた高信頼性</li></ul><h5>ミッション・ビジョン</h5><ul><li>「AIで日本の底力を解放し、もう一度世界トップへ」</li><li>研究成果をタイムリーにビジネス現場に応用し、日本の可能性を高める</li></ul><h5>価値観の特徴</h5><ul><li>「爆速でやってみる」アジャイル開発・プロトタイピング重視</li><li>技術力よりビジネス貢献を最優先する姿勢</li><li>常に学び、成長し続けるフロントランナーとしての自律性と責任感</li></ul><h5>資金調達歴</h5><p>詳細非公表（プレシード～シード期相当、Wantedly上で約30万米ドル超の調達実績）</p><h5>提携・導入事例</h5><ul><li>富士フイルムビジネスイノベーションと業務特化型生成AIの販売・技術提携に向けた協議開始</li><li>50社超への「neoAI Chat」導入実績（金融機関、電力会社等）、金融・不動産分野での1年にわたるPoC実施</li></ul><h5>リンク</h5><p><a href="[https://neoai.jp](https://neoai.jp/)" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="igsa"><h4>株式会社IGSA</h4><p><strong>設立年:</strong> 2022年8月<br><strong>所在地:</strong> 東京都文京区本郷6-25-14 3F<br><strong>代表者:</strong> 松島 創一郎</p><h5>主な事業</h5><ul><li>ヘルスケア事業：AIによる認知症（MCI）早期発見サービスの研究・開発</li><li>AI/DXパートナー事業：エンタープライズ企業向けビジネスプロセスのデジタル化・AI化支援</li></ul><h5>提供サービス・プロダクト</h5><ul><li>音声言語モデルを用いたスマートフォン検査スキーム（MCI早期スクリーニング）</li><li>生成AI基盤モデル開発／大規模言語モデル（LLM）導入支援</li><li>中古品取引支援サービス「スグトリ」、業務推薦システム「スグレコ」など</li></ul><h5>対象顧客・市場</h5><ul><li>医療機関／自治体向け認知症予兆検出市場（予防医療分野）</li><li>製造・流通・サービス業などエンタープライズ企業のDX需要</li></ul><h5>活用技術</h5><ul><li>東京大学松尾・岩澤研究室発の基盤モデル技術（音声・テキスト・画像）</li><li>自社開発の音声言語モデルによる認知機能解析アルゴリズム</li><li>大規模言語モデルを含む最新AI技術の社会実装</li></ul><h5>競争優位性</h5><ul><li>基盤モデルレイヤー自体の研究開発能力を有し、音声ベースのMCI検知をスマホで手軽に実現</li><li>大学発スタートアップならではの研究リソース直結体制と若手技術者のスピード感</li></ul><h5>ミッション・ビジョン</h5><ul><li>「AI×人間」で未来の社会システムをやわらかく支える</li><li>「未来のあたりまえを創り、持続可能な幸せを追求する」</li></ul><h5>価値観の特徴</h5><ul><li>若手中心のオープンなコミュニケーションとフラットな組織風土</li><li>小さな失敗を許容し学びに変えるカルチャー</li><li>個人の成長機会重視（短期間・継続的な昇進、SO付与、インターン歓迎）</li></ul><h5>資金調達歴</h5><p>シードラウンド段階（VC参加あり、Deep30 LLPなど）</p><h5>提携・導入事例</h5><ul><li>東京都墨田区プロトタイプ実証実験支援事業採択（2024/7）</li><li>ASAC（青山スタートアップアクセラレーションセンター）16期採択</li><li>Japan Open Innovation Fes 2024出展ほか多数</li></ul><h5>リンク</h5><p><a href="[https://igsa.co.jp](https://igsa.co.jp/)" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="deepreneur"><h4>株式会社Deepreneur (Deepreneur Inc.)</h4><p><strong>設立年:</strong> 2023年4月28日<br><strong>所在地:</strong> 東京都文京区本郷6丁目25番14号 HONGO EGG内<br><strong>代表者:</strong> 代表取締役 澤田 悠太</p><h5>主な事業</h5><ul><li>AIソリューション事業</li><li>大規模言語モデル（LLM）事業</li></ul><h5>提供サービス・プロダクト</h5><ul><li>企業向けDX推進に向けたAI・システム開発、技術コンサルティングから開発・導入までの一気通貫支援</li><li>ChatGPTなど生成AI導入支援および社内FAQ、ナレッジ共有システム構築</li><li>自社開発日本語LLM「Blue-Lizard」（70億パラメータ）の提供</li><li>オンプレ／クラウド両対応の企業固有LLM構築サービス</li></ul><h5>対象顧客・市場</h5><ul><li>B2B領域の大手製造業、コンサルティング企業、建設・設備管理など幅広い業種</li><li>自社データを活用した高精度AI活用を志向する企業</li></ul><h5>活用技術</h5><ul><li>東京大学松尾・岩澤研究室発のDeep Learning技術基盤</li><li>画像認識・音声認識など既存AI技術</li><li>Meta Llama-2-7bをベースに日本語データで追加学習・ファインチューニングした「Blue-Lizard」</li></ul><h5>競争優位性</h5><ul><li>JGLUE評価でChatGPT-3.5を上回る日本語モデル性能（公開中モデル中最高水準）</li><li>軽量（70億パラメータ）ながら高精度、オンプレ型構築支援でセキュア運用を実現</li><li>アカデミア発技術をビジネス実装に最速で移行するノウハウ</li></ul><h5>ミッション・ビジョン</h5><ul><li>ミッション：「AI技術を用いてこれまでにない新しい人間とテクノロジーの関係を築く。」</li><li>ビジョン：最先端のAIを最速でビジネス実装</li></ul><h5>価値観の特徴</h5><ul><li>アカデミックバックグラウンドと実務をシームレスに結合</li><li>スピード感を重視した開発プロセス</li><li>顧客に寄り添うカスタマイズ性と柔軟なシステム設計</li></ul><h5>資金調達歴</h5><ul><li>2023年7月：Deep30有限責任事業組合よりシードラウンド調達（額非公開）</li><li>調達後評価額：約7,500万円（第三者割当増資ベース）</li></ul><h5>提PSE・導入事例</h5><ul><li>伊藤忠丸紅鉄鋼：生成AI活用プロジェクト開始（2023年11月）</li><li>AKKODiSコンサルティング：社内FAQシステム導入（2023年9月）</li><li>新日本空調：ナレッジ共有向け生成AI開発・実証（2023年12月）</li><li>NVIDIA Inception Programパートナー認定（2023年10月）</li><li>Microsoft for Startups採択（2023年8月）</li><li>Berkeley SkyDeckアクセラレータ採択（2024年9月）</li><li>経産省J-StarXプログラム派遣（2023年9月）</li><li>Forbes Japan「JAPAN’S AI 50」選出（2025年2月）</li></ul><h5>リンク</h5><p><a href="https://www.deepreneur.com/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://www.deepreneur.com/career" target="_blank" rel="noopener noreferrer">採用情報</a> | <a href="https://www.deepreneur.com/contact" target="_blank" rel="noopener noreferrer">問い合わせ</a></p></div>
+<div data-company="elith"><h4>株式会社Elith（Elith Inc.）</h4><p><strong>設立年:</strong> 2022年12月<br><strong>所在地:</strong> 東京都文京区本郷3-30-10 本郷K&Kビル1F<br><strong>代表者:</strong> 代表取締役CEO 井上 顧基</p><h5>主な事業</h5><ul><li>「オートクチュールAI開発」を掲げたカスタムAIソリューションの受託・コンサルティング</li><li>自社プロダクト（手話AI「SHUWAI」、半導体歩留り改善画像検査AIなど）の研究開発</li><li>共同研究・アドバイザリーサービス</li></ul><h5>提供サービス・プロダクト</h5><ul><li>生成AI／大規模言語モデル（LLM）の設計・学習・最適化</li><li>画像認識AI（製造業向け欠陥検知、医療・介護向けルート最適化など）</li><li>音声解析AI（営業支援LLMなど）</li><li>RPA連携ツール（決算書作成支援、自社株評価ツール）</li><li>AI技術ニュースレター「週刊エーアイElith」</li></ul><h5>対象顧客・市場</h5><ul><li>エネルギー、自動車、建築、医療・介護、製造、金融、人材、ファッション、eコマースなど幅広いBtoB企業</li></ul><h5>活用技術</h5><ul><li>自社データセット構築によるLLM学習・最適化技術</li><li>画像・音声・テキストを統合処理するマルチモーダルAI</li><li>Wi-Fiセンシングアルゴリズム、RPA連携による業務自動化</li><li>大学共同研究を通じた最先端論文知見の実装</li></ul><h5>競争優位性</h5><ul><li>松尾研究室発の基礎研究知見をダイレクトに事業化</li><li>クライアント毎に最適化する「オートクチュール」型開発</li><li>産業特化型ソリューションの幅広いポートフォリオ</li><li>共同研究プロジェクトのネットワークを活かした技術アドバイザリー</li></ul><h5>ミッション・ビジョン</h5><ul><li>ミッション：サイバースペースの民主化で人とAIが共進化する未来を築く</li><li>ビジョン：オートクチュールAI開発でビジネスを加速し、資本サイクルを活性化</li></ul><h5>価値観の特徴</h5><ul><li>研究と事業の両輪での技術深化</li><li>顧客課題への深い理解とカスタマイズ</li><li>アカデミア連携による社会実装重視</li><li>多様なバックグラウンドを歓迎するオープンイノベーション</li></ul><h5>資金調達歴</h5><p>シードステージ（2023年頃）※非公表ながらVC出資を受け、潜在株含む評価額50百万円程度と推定</p><h5>提携・導入事例</h5><ul><li>2024/12：キャピタル・アセット・プランニングと金融業務効率化システム共同開発</li><li>2024/12：AI6とWi-Fiセンシングアルゴリズム共同開発</li><li>2024/07：Recovery Internationalと訪問看護ルート最適化システム開発</li><li>JFE、複数の製造業・医療機関などへのAI導入実績</li></ul><h5>リンク</h5><p><a href="https://elith.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://elith.co.jp/recruit" target="_blank" rel="noopener noreferrer">採用情報</a></p></div>
+<div data-company="エムニ"><h4>株式会社エムニ</h4><p><strong>設立年:</strong> 情報非公開<br><strong>所在地:</strong> 非公開（東京を拠点）<br><strong>代表者:</strong> 下野（CEO、氏名非公開）</p><h5>主な事業</h5><ul><li>製造業特化型生成AIソリューションの開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>オーダーメイド生成AI開発（LLM、RAG、画像認識・時系列解析・音声処理モデルなど）</li><li>生成AIワークショップ（基礎～最先端技術の講義・ハンズオン）</li><li>セキュアチャット（社内専用AIチャットボットアプリ）</li></ul><h5>対象顧客・市場</h5><ul><li>製造業（生産性向上、コスト削減、品質管理、技能伝承など）</li><li>建設、物流、衛星画像解析など他業種へのAI適用事例も展開</li></ul><h5>活用技術</h5><ul><li>東京大学松尾研究室／京大AI研究者による生成AI技術（オンプレミスLLMファインチューニング、RAG構築、時系列処理、画像認識、最適化）</li><li>多数のAIハッカソン優勝・入賞実績を持つ開発チームによるフルスタック実装・運用保守</li></ul><h5>競争優位性</h5><ul><li>製造業固有の課題に深くコミットしたカスタムモデル開発力</li><li>データ機密性を担保するセキュアチャットプラットフォーム</li><li>最新論文応用やAPI超えた独自モデル開発能力</li></ul><h5>ミッション・ビジョン</h5><ul><li>インダストリー4.0時代における最先端生成AIの社会実装</li><li>「つくる現場」に即したAIで産業DXを加速し、持続的な生産性向上を実現</li></ul><h5>価値観の特徴</h5><ul><li>研究と実装を一気通貫で推進するチームプレイ</li><li>セキュアかつ迅速なPoC／本番展開</li><li>顧客課題への真摯なヒアリングと伴走型サポート</li></ul><h5>資金調達歴</h5><p>非公開</p><h5>提携・導入事例</h5><ul><li>住友電気工業との生成AI研究開発プロジェクト（2件完了）</li><li>製造業におけるチャットボット導入、異音検知・異常予測モデル構築、特許文書自動分類など多数</li></ul><h5>リンク</h5><p><a href="https://emuni.ai/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://emuni.ai/recruit" target="_blank" rel="noopener noreferrer">採用情報</a></p></div>
+<div data-company="synclip"><h4>SynClip株式会社</h4><p><strong>設立年:</strong> 2023年（シードラウンド直前）<br><strong>所在地:</strong> 東京都文京区（大学発ベンチャー区画）<br><strong>代表者:</strong> 非公開（松尾研究室OB・OGが中心メンバーと推定）</p><h5>主な事業</h5><ul><li>AI技術を活用した映像生成・編集プラットフォームの開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>SynClip Editor：顔のリップシンク（口パク）を自動生成するデスクトップ／クラウド型ツール</li><li>SynClip API：外部アプリ・サービス向けの動画自動加工API</li></ul><h5>対象顧客・市場</h5><ul><li>映像制作会社、広告代理店、e-ラーニング事業者</li><li>グローバル展開するゲーム・メディア企業</li></ul><h5>活用技術</h5><ul><li>GAN（敵対的生成ネットワーク）を応用した高精度フェイストラッキング</li><li>マルチモーダル学習（音声→表情変換）における松尾研究室の論文成果</li><li>オンデバイス推論対応によるプライバシー保護技術</li></ul><h5>競争優位性</h5><ul><li>大学発研究シーズを直接組み込んだリアルタイム処理性能</li><li>ユーザー自身でパラメータ調整可能なGUIツールの提供</li><li>小規模チームでの開発による柔軟性とスピード感</li></ul><h5>ミッション・ビジョン</h5><p>「言語と映像のインターフェースを革新し、クリエイターの表現領域を拡張する」</p><h5>価値観の特徴</h5><ul><li>研究マインドの重視（論文リリース、オープンソース化への意欲）</li><li>エンドユーザー体験の最適化（UX／UI重視）</li><li>アジャイル開発／PoC検証による実証重視</li></ul><h5>資金調達歴</h5><p>2023年シードラウンド：約1.2億円（投資先非公表だが大学系VC複数が参画）</p><h5>提携・導入事例</h5><ul><li>大手広告代理店とのPoC契約（海外動画のローカライズ自動化）</li><li>教育コンテンツプラットフォームでのβテスト導入</li></ul></div>
+<div data-company="athenatechnologies"><h4>株式会社Athena Technologies（英語表記: Athena Technologies, Inc.）</h4><p><strong>設立年:</strong> 2023年12月（旧社名: 株式会社Deepcraft）<br><strong>所在地:</strong> 東京都（詳細住所は非公開）<br><strong>代表者:</strong> 代表取締役CEO 阿部 武（東京大学松尾研究室出身）</p><h5>主な事業</h5><p>AIセキュリティ＆ガバナンス事業</p><h5>提供サービス・プロダクト</h5><ul><li>Athena Platform：機械学習モデルや大規模言語モデル(LLM)の運用リスク可視化・抑制</li><li>Athena Firewall：プロンプトインジェクション、不適切出力、個人情報漏洩、モデル悪用などをリアルタイム検知・防止するLLMガードレール</li></ul><h5>対象顧客・市場</h5><ul><li>官公庁、金融、医療など高度な信頼性・コンプライアンスが求められる企業および大規模AI導入を検討する法人市場</li></ul><h5>活用技術</h5><ul><li>最先端の機械学習／大規模言語モデル運用技術</li><li>独自開発のハイブリッド推論基盤によるミリ秒レベル応答</li><li>ゼロトラストアーキテクチャを応用した入出力常時監視</li><li>OWASP Top 10 for LLMや国内AIガイドライン準拠のリスク対応</li><li>意図的攻撃シミュレーションによる脆弱性検証</li></ul><h5>競争優位性</h5><ul><li>東京大学松尾研究室発の研究成果を活用した高検知精度</li><li>学術と実装を両立する研究開発体制</li><li>低レイテンシかつ高精度を両立したフルスタック型AIセキュリティソリューション</li></ul><h5>ミッション・ビジョン</h5><ul><li>ミッション「セキュアなAIで未来を拓く」</li><li>生成AIをはじめとする技術で日本の労働生産性向上と国際競争力回復を図る</li></ul><h5>価値観の特徴</h5><ul><li>研究開発・論文活動への積極投資</li><li>学術トップレベルの技術者によるチームビルド</li><li>新技術の社会実装を通じた「新しい付加価値」創出</li><li>イノベーションと持続可能性へのコミットメント</li></ul><h5>資金調達歴</h5><ul><li>2024年6月「松尾研発スタートアップ」認定</li><li>2024年9月に第三者割当増資実施（調達額非公開、推定評価額約5,000万円）</li><li>2025年1月社名変更にあわせ事業拡大フェーズ</li></ul><h5>提携・導入事例</h5><ul><li>現時点で公表済みの大規模提携事例は未公開</li><li>官公庁・金融・医療機関向けPoC検証・導入支援を順次展開中</li></ul></div>
+<div data-company="[polaris.ai](http://polaris.ai/)"><h4>Polaris.AI株式会社</h4><p><strong>設立年:</strong> 2023年5月26日<br><strong>所在地:</strong> 東京都文京区本郷6-25-14 宗文館ビル3F<br><strong>代表者:</strong> 代表取締役CEO 徳永 優也</p><h5>主な事業</h5><ul><li>企業向けAIソリューションの企画・開発・導入支援</li><li>AIプロジェクトのコンサルティング／伴走型運用</li></ul><h5>提供サービス・プロダクト</h5><ul><li>課題定義ワークショップ</li><li>機械学習／深層学習モデルの設計・実装</li><li>データ基盤構築支援、運用自動化ツール</li></ul><h5>対象顧客・市場</h5><ul><li>製造業、金融、小売、サービス業など国内企業全般</li><li>AI活用を模索する大中堅企業および公共部門</li></ul><h5>活用技術</h5><ul><li>大規模言語モデル（LLM）、自然言語処理（NLP）、深層学習を中心に選定・組み合わせ</li><li>東京大学松尾・岩澤研究室の最先端研究成果を実運用へ応用</li></ul><h5>競争優位性</h5><ul><li>戦略コンサルタント出身者による本質的課題抽出力と、東大・国内外IT企業出身のAIエンジニアによる技術開発力を両立</li><li>「使われるAI」を重視し、PoCではなく価値創出まで伴走するビジネスモデル</li><li>小規模組織の機動性を活かした最新技術への迅速なトライアル</li></ul><h5>ミッション・ビジョン</h5><ul><li>ミッション：適切な課題を、最適な技術で解決する</li><li>ビジョン：AI時代の羅針盤として日本企業の新しい未来を共創</li></ul><h5>価値観の特徴</h5><ul><li>フラットでオープンなコミュニケーション</li><li>チャレンジ精神重視、新技術への積極的な挑戦</li><li>職種を超えたスキルシェアリングと成長機会の提供</li></ul><h5>資金調達歴</h5><p>非公開（創業間もないシード期相当）</p><h5>提携・導入事例</h5><ul><li>東京大学松尾・岩澤研究室認定（2024年12月）</li><li>NexTechWeek 2025 出展（展示会参加実績）</li></ul></div>
+<div data-company="arcra"><h4>株式会社ARCRA</h4><p><strong>設立年:</strong> 2023年9月27日<br><strong>所在地:</strong> 東京都文京区本郷6-25-14 宗文館ビル3F<br><strong>代表者:</strong> 代表取締役CEO 藤本 秦平</p><h5>主な事業</h5><ul><li>– 企業向けAI導入支援（企画・PoC・開発・導入・運用）</li><li>– AIソフトウェア受託開発</li><li>– AI研修・人材育成</li><li>– 建築・都市領域を含む業務効率化プラットフォーム運営</li></ul><h5>提供サービス・プロダクト</h5><ul><li>AI導入パッケージプラン（AIリテラシー研修／業務棚卸し／AI適用レポート／導入ロードマップ／PoC・チャットボット開発／AI人材育成）</li><li>オンデマンド型学習プラットフォーム「AI Learning」（建築・製造業向け業務効率化ツール6種を含む）</li><li>オーダーメイドAIソリューション（画像認識、生成系AI、強化学習、NLP等）</li></ul><h5>対象顧客・市場</h5><ul><li>– 建築・建設、製造業をはじめとする企業のDX推進部門</li><li>– 中堅〜大手企業の経営・IT企画層</li></ul><h5>活用技術</h5><ul><li>– 東京大学松尾・岩澤研究室の空間情報解析、大規模言語モデル、深層生成モデル</li><li>– 画像認識、生成AI、強化学習、自然言語処理</li><li>– UI/UX設計と空間データ統合</li></ul><h5>競争優位性</h5><ul><li>– 建築・都市設計領域の経験を活かした空間情報×AIの融合</li><li>– 企画～PoC～開発～運用～研修まで一気通貫の支援体制</li><li>– 松尾研発スタートアップとしてのアカデミック基盤と実務力の併存</li></ul><h5>ミッション・ビジョン</h5><ul><li>– Mission：「情報との出会い方をデザインする」</li><li>– ビジョン：有限な時間の中で価値ある情報を届け、人々の認知を豊かにする</li></ul><h5>価値観の特徴</h5><ul><li>– 社会課題の解決志向</li><li>– 技術革新とユーザー体験の両立</li><li>– 産学連携を通じたオープンなエコシステム構築</li></ul><h5>資金調達歴</h5><p>非公開（創業シード期、松尾研発スタートアップ認定）</p><h5>提携・導入事例</h5><ul><li>– 宝くじロト分析AIシステム</li><li>– 建築業界向けAIプラットフォーム</li><li>– 複数企業へのAI導入PoC、チャットボット構築支援</li></ul><h5>リンク</h5><p><a href="https://arcra.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://arcra.jp/recruit" target="_blank" rel="noopener noreferrer">採用情報</a></p></div>
+<div data-company="wanderlustequipmentllc."><h4>WANDERLUST EQUIPMENT LLC.</h4><p><strong>設立年:</strong> 非公開（少なくとも2020年前後から製品展開）<br><strong>所在地:</strong> 〒162-0811 東京都新宿区水道町1-18 2F<br><strong>代表者:</strong> 非公開</p><h5>主な事業</h5><ul><li>ウルトラライトアウトドアギアの企画・設計・製造および直販</li></ul><h5>提供サービス・プロダクト</h5><ul><li>– 軽量スタッフサック、バッグ（Khampala Pack, Trail Zip Sack ほか）</li><li>– 折りたたみ式焚き火台（Picogrill 398/680/760）</li><li>– 保温容器（Stand Cozy）</li><li>– モジュラー携帯工具（BitRocket）</li><li>– その他ハイキング・バイクパッキング向け小物ギア</li></ul><h5>対象顧客・市場</h5><ul><li>ウルトラライトハイカー、バックパッカー、BCスキーヤー、バイクパッカーなど、装備の軽量化・機能性を重視するアウトドア愛好家</li></ul><h5>活用技術</h5><ul><li>– Dyneema Composite Fabric（キューベンファイバー、DCF）をはじめとする超軽量高強度素材</li><li>– マグネット着脱＋モジュラー拡張を可能にした15gのビットドライバー「BitRocket」</li><li>– ワンアクションで展開・収納できる折りたたみ焚き火台設計</li><li>– 低縫製・シームテープ加工による完全防水ポーチ技術</li></ul><h5>競争優位性</h5><p></p><h5>ミッション・ビジョン</h5><p>「自然を旅するための、軽量シンプルな道具をつくるガレージメーカー」</p><h5>価値観の特徴</h5><p></p><h5>資金調達歴</h5><p>非公開（エンジェル／シード段階と推計）</p><h5>提携・導入事例</h5><ul><li>– スイスSTC社製Picogrill正規輸入・国内販売</li><li>– 大阪・山千世界などアウトドアイベントへの定期出店</li><li>– MT.FABs（自社オープンファクトリー兼店舗）での直販</li></ul></div>
+<div data-company="scien"><h4>株式会社SCIEN（SCIEN Inc.）</h4><p><strong>設立年:</strong> 2024年2月<br><strong>所在地:</strong> 〒113-0033 東京都文京区本郷6-25-14<br><strong>代表者:</strong> 代表取締役　田端 そら</p><h5>主な事業</h5><ul><li>人工知能・ソフトウェア・システムの研究開発</li><li>AI技術・ブロックチェーン等を活⽤したソリューション・プラットフォーム・アプリ開発</li><li>AI製品販売およびカスタマイズITソリューション提供</li><li>教育・研修およびコンサルティング</li></ul><h5>提供サービス・プロダクト</h5><p></p><h5>対象顧客・市場</h5><ul><li>製造業、⼩売業、流通、金融、公共セクターなど、アナログ業務のデジタル化・高度化を求める企業</li></ul><h5>活用技術</h5><p></p><h5>競争優位性</h5><ul><li>顕在化しにくい「潜在的アナログ課題」の抽出ノウハウ</li><li>機能ではなくプロセス単位での最⼤限カスタマイズ提案</li><li>アカデミア直結の技術アップデート体制</li><li>AWS Activate／NVIDIA Inception認定によるクラウドGPU環境へのアクセス</li></ul><h5>ミッション・ビジョン</h5><p>「潜在的なアナログ課題を顕在化し、お客様に最大限カスタマイズされたITソリューションを提供する」</p><h5>価値観の特徴</h5><p></p><h5>資金調達歴</h5><p>シードラウンド（2025年5月実施）</p><h5>提携・導入事例</h5><ul><li>AWS Activate（プログラム採択）</li><li>NVIDIA Inception（パートナープログラム認定）</li><li>SusHi Tech TOKYO、リテールテックJAPAN、ものづくりワールドなど各種展示会にて実証・展示実施</li></ul><h5>リンク</h5><p><a href="https://scien.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://scien.co.jp/career/" target="_blank" rel="noopener noreferrer">採用情報</a></p></div>
+<div data-company="jings"><h4>株式会社JINGS</h4><p><strong>設立年:</strong> 2024年4月22日<br><strong>所在地:</strong> 東京都文京区本郷6丁目25-14 宗文館ビル3F<br><strong>代表者:</strong> 代表取締役CEO　三上 春香</p><h5>主な事業</h5><ul><li>AI特化型システム受託開発</li><li>DX推進コンサルティング</li><li>生成AI／大規模言語モデル（LLM）導入支援</li></ul><h5>提供サービス・プロダクト</h5><ul><li>オーダーメイドAIシステム開発（産業特化型・コーポレート業務効率化）</li><li>RAG型カスタムAIチャットボット</li><li>AI-OCRソリューション</li><li>需要予測・最適化AI</li><li>カスタム分析AIプラットフォーム</li><li>生成AIを用いたテストデータ自動生成による業務効率化</li></ul><h5>対象顧客・市場</h5><ul><li>大手製造・物流、医療、金融、流通、自治体など幅広い業界</li><li>日本国内の中堅～大手企業を中心にDXニーズを抱える企業</li></ul><h5>活用技術</h5><ul><li>深層学習／大規模言語モデル（ChatGPT等）</li><li>Retrieval-Augmented Generation（RAG）</li><li>AI-OCR、時系列予測アルゴリズム、データ分析ダッシュボード</li><li>東京大学松尾・岩澤研究室発の最先端研究知見</li></ul><h5>競争優位性</h5><ul><li>東大松尾研発スタートアップとしての研究バックグラウンド</li><li>少数精鋭のフルスタックAIエンジニアチームによるスピード重視開発</li><li>伴走型コンサルティングによる成果コミットメント</li><li>高度な情報セキュリティ知見と産学連携エコシステムへのアクセス</li></ul><h5>ミッション・ビジョン</h5><ul><li>「AIでイノベーションを民主化し、日本をエンパワメントする」</li><li>「チャレンジしてよかった!」と感じられる未来を共に創る</li><li>Japan as No.1の実現と個々の付加価値最大化</li></ul><h5>価値観の特徴</h5><ul><li>スピードと実行力を重視するトライ＆エラー文化</li><li>一貫してプロジェクトに責任を持つ伴走姿勢</li><li>フラットな組織で自律的提案を歓迎</li><li>最新技術への貪欲なキャッチアップ</li></ul><h5>資金調達歴</h5><p>非公開（設立間もないシード期）</p><h5>提携・導入事例</h5><ul><li>株式会社日本経営（医療システム部門への生成AI/LLM導入支援）</li><li>NTTPC Innovation LAB共創パートナープログラム参画</li></ul><h5>リンク</h5><p><a href="https://jings.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="quackshift"><h4>株式会社QuackShift</h4><p><strong>設立年:</strong> 2023年12月5日<br><strong>所在地:</strong> 東京都千代田区神田小川町3-28-5 axle御茶ノ水302号室<br><strong>代表者:</strong> 平野 佑樹</p><h5>主な事業</h5><ul><li>大規模言語モデル（LLM）や生成AIを核とした伴走型AI/DXソリューション開発</li><li>AI活用セミナー・コンサルティング</li></ul><h5>提供サービス・プロダクト</h5><p></p><h5>対象顧客・市場</h5><ul><li>製造業、流通・小売業、物流など幅広い産業領域のB2B企業</li></ul><h5>活用技術</h5><p></p><h5>競争優位性</h5><p></p><h5>ミッション・ビジョン</h5><p>「人に『次』をみせる。〜Update Industry〜」</p><h5>価値観の特徴</h5><p></p><h5>資金調達歴</h5><ul><li>外部資金の公表なし（創業初期）</li><li>Microsoft for Startups、AWS Activate 等プログラム採択実績あり</li></ul><h5>提携・導入事例</h5><ul><li>製造・流通・小売業各社での文書処理自動化、営業最適化、需要予測システム導入</li><li>物流業向けAIエージェントやスマートファクトリー支援のオンラインセミナー開催</li></ul><h5>リンク</h5><p><a href="[https://quackshift.jp](https://quackshift.jp/)" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="bakutan"><h4>BAKUTAN株式会社</h4><p><strong>設立年:</strong> 2024年4月1日<br><strong>所在地:</strong> 東京都港区虎ノ門1-17-1 虎ノ門ヒルズビジネスタワー15階（本店：東京都文京区本郷6-25-14）<br><strong>代表者:</strong> 代表取締役CEO　小森谷 周大</p><h5>主な事業</h5><ul><li>– AI技術とマーケットデザイン理論を組み合わせたHR領域のDX・AIインテグレーション</li><li>– 人的資本経営支援ソリューションの研究開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>– エンタープライズ向け人的資本経営支援プラットフォーム『Intelligent HR』</li><li>– 社内人材配置最適化アルゴリズム</li><li>– 人材派遣・紹介業向けマッチング技術</li><li>– 「パーソナルキャリアツイン」等のキャリアデータ可視化ツール</li></ul><h5>対象顧客・市場</h5><ul><li>– 大手企業の人事・HR部門</li><li>– 人材紹介・派遣事業者</li><li>– 人的資本経営を高度化したい企業・組織</li></ul><h5>活用技術</h5><ul><li>– 深層学習／生成AI、大規模言語モデルを活用したデータ解析</li><li>– マーケットデザイン（制度設計）理論に基づく意思決定メカニズムの設計・実装</li><li>– 組合せ最適化アルゴリズム</li></ul><h5>競争優位性</h5><ul><li>– 東大松尾・岩澤研究室発の学術知見を直結させたマッチング・制度設計技術</li><li>– 単なるマッチング精度向上にとどまらない、市場メカニズムを組み込んだ「ミスマッチ解消」のアプローチ</li><li>– 人とAIが協働する枠組み設計まで含めたソリューション提供能力</li></ul><h5>ミッション・ビジョン</h5><ul><li>– ミッション：「ミスマッチのない世界」の実現</li><li>– ビジョン：「キャリアデータのポータブル化」を通じた個人の可能性開放</li></ul><h5>価値観の特徴</h5><ul><li>– データドリブンによる個人と組織のポテンシャル最大化</li><li>– 「人が主体的に働く」社会インパクトの重視</li><li>– 学術知見の実社会還元</li></ul><h5>資金調達歴</h5><p>– シードラウンド（2025年2月実施、Deep30有限責任事業組合ほか出資）</p><h5>提携・導入事例</h5><ul><li>– 元ソニーグループ人事執行役専務・安部和志氏が顧問として参画（2025年5月）</li><li>– 大手企業HRプロジェクトへのAIインテグレーション実績多数（詳細非公開）</li></ul></div>
+<div data-company="sparkplus"><h4>株式会社SparkPlus（Spark+）</h4><p><strong>設立年:</strong> 2024年2月13日<br><strong>所在地:</strong> 東京都文京区本郷6丁目25番14号 宗文館ビル3F（HONGO EGG内）<br><strong>代表者:</strong> 本田 純平（代表取締役社長）</p><h5>主な事業</h5><p>製造業を起点とした企業向けDXソリューションおよびAIコンサルティング</p><h5>提供サービス・プロダクト</h5><ul><li>大規模言語モデル（LLM）・コンピュータビジョン（CV）を活用した業務自動化・設計支援・品質保証支援ソリューション</li><li>独自音声モデルを用いたコールセンター向けAIエージェント「VoiceGPT」などの音声AIサービス</li><li>ハードウェア設計の知見を活かしたAIロボット開発</li></ul><h5>対象顧客・市場</h5><ul><li>主に製造業（大手・中堅企業）、保険業界などのBtoB市場</li></ul><h5>活用技術</h5><ul><li>東京大学松尾・岩澤研究室発の深層学習・大規模言語モデル・生成AI技術</li><li>独自開発の音声認識・合成モデル</li><li>ロボット制御・ハードウェア設計知見との融合</li></ul><h5>競争優位性</h5><ul><li>学術研究に裏打ちされた最先端アルゴリズムの実装力</li><li>設計から運用までを一貫して支援するコンサルティング体制</li><li>松尾研エコシステムとの連携による継続的な技術アップデート</li></ul><h5>ミッション・ビジョン</h5><ul><li>「日本の飛躍に火をつける」―産業DXを通じた日本経済の活性化</li><li>三方よしの精神で関係者に価値還元</li></ul><h5>価値観の特徴</h5><ul><li>「社会実装」を重視し、研究成果を現場課題解決に直結</li><li>産学連携による持続的エコシステム構築へのコミット</li></ul><h5>資金調達歴</h5><p>2025年2月頃、Deep30投資事業有限責任組合を引受先とする第三者割当増資（調達額非公開）</p><h5>提携・導入事例</h5><ul><li>三菱重工業：宇宙事業向け設計業務におけるLLM活用プロジェクト</li><li>山田製作所：業務効率化システムのPoCおよび全社導入</li><li>三桜工業：DRBFM（設計改善手法）自動生成に向けた共同開発</li><li>[ライフネット生命保険＋Dyna.Ai](http://xn--dyna-uk4c4g9a0b9dskr664a6ul5m7hxuvep11p.ai/)：保険募集分野向け音声エージェント適用</li><li>東京都「NEXs Tokyo」採択スタートアップ</li></ul><h5>リンク</h5><p><a href="https://sparkplus.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="2wins"><h4>株式会社2WINS</h4><p><strong>設立年:</strong> 2022年2月17日<br><strong>所在地:</strong> 東京都渋谷区宇田川町1-12　パークコート渋谷ザ・タワー<br><strong>代表者:</strong> 小川椋徹・吉村良太（Co-CEO）</p><h5>主な事業</h5><p>AIソリューション事業およびAI SaaS事業</p><h5>提供サービス・プロダクト</h5><ul><li>企業向けカスタムAI開発（大規模言語モデル、画像解析、AI OCR、音声解析など）</li><li>補助金申請支援ツール「補助金Express」</li><li>個人向けマンガ生成サービス「[manga.ai](http://manga.ai/)」</li><li>Web／デスクトップ向けAIアプリケーション設計・開発</li></ul><h5>対象顧客・市場</h5><ul><li>B2B：大手企業（東京ガス、三菱UFJリサーチ＆コンサルティングほか）、自治体、製造業プラットフォーム事業者</li><li>BtoC：個人向けジェネレーティブAIサービス利用者</li></ul><h5>活用技術</h5><ul><li>プライバシーを重視したローカルLLM</li><li>言語系・画像系AI、深層学習、Webマイニングの最新アルゴリズム</li><li>AI OCR、音声解析によるリアルタイム文字起こし・話者識別</li><li>東大松尾研／インド工科大出身の研究者によるコア技術研究成果の産業実装</li></ul><h5>競争優位性</h5><ul><li>研究者とエンジニアが一体で推進する「アカデミア発」コア技術の深耕</li><li>クライアントの事業課題に最適化した多様なAI手法の提案力</li><li>課題発見からPoC、導入、運用まで一気通貫で伴走する体制</li></ul><h5>ミッション・ビジョン</h5><ul><li>ミッション：勝たせるAIで全ての企業を新たな姿へ</li><li>ビジョン：次代の覇者たちを生み出すエンジンとなる</li></ul><h5>価値観の特徴</h5><ul><li>顧客成功を最優先し「ツインズ」として共創する姿勢</li><li>自己実現と成長を支える柔軟な働き方、若手への大きな裁量</li><li>多様なバックグラウンドと強い「Will」を重視し、研究探究心を大切にする文化</li></ul><h5>資金調達歴</h5><p>資本金100万円、外部調達公表なし（シード相当）</p><h5>提携・導入事例</h5><ul><li>東京ガス：プライバシー重視LLMで社内業務効率化、工数90％削減</li><li>三菱UFJリサーチ＆コンサル：自治体業務効率化に向けたLLM技術共同活用</li><li>株式会社アクセル：DXツールにおける音声解析／話者識別機能の実装</li><li>株式会社アペルザ：製造業向けプラットフォームへのLLM／AI OCR統合</li><li>自社サービス：補助金Express、[manga.ai](http://manga.ai/)、Web3コミュニティ運営など</li></ul><h5>リンク</h5><p><a href="[https://www.2wins.ai](https://www.2wins.ai/)" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://www.2wins.ai/career" target="_blank" rel="noopener noreferrer">採用情報</a></p></div>
+<div data-company="epicai"><h4>株式会社EpicAI</h4><p><strong>設立年:</strong> 2023年12月<br><strong>所在地:</strong> 〒113-0033 東京都文京区本郷6-25-14 宗文館ビル3F<br><strong>代表者:</strong> 横山 敬一</p><h5>主な事業</h5><ul><li>B2B向けオーダーメイドAIソリューションの開発・提供、データアナリティクス</li></ul><h5>提供サービス・プロダクト</h5><ul><li>AI開発（数値予測、画像認識、自然言語処理、生成AIなど）</li><li>AIソリューション開発（課題抽出から提案・開発・導入・運用まで）</li><li>データアナリティクス（社内データの可視化・分析・レポーティング）</li></ul><h5>対象顧客・市場</h5><p>製造業、建設業、脱炭素分野を含む大手企業および中堅企業のDX推進部門</p><h5>活用技術</h5><ul><li>東京大学松尾研究室発の機械学習・深層学習アルゴリズム</li><li>生成AI、3Dモデル生成AI（プラント部品など）</li><li>モデル設計から推論エンジン実装、運用監視までの一気通貫パイプライン</li></ul><h5>競争優位性</h5><ul><li>松尾研出身メンバーによる最先端研究知見の迅速な製品化</li><li>複数分野（画像認識、NLP、数値予測等）の技術横断的組合せによるカスタム開発</li><li>導入後の運用・保守まで自社リソースで対応可能な体制</li></ul><h5>ミッション・ビジョン</h5><p>「AIによって人々の新しい共生基盤をつくる」</p><h5>価値観の特徴</h5><ul><li>学術成果の実装重視</li><li>クライアント課題の本質的解決</li><li>長期的な共創関係</li></ul><h5>資金調達歴</h5><p>非上場、VC支援あり（詳細未公開）</p><h5>提携・導入事例</h5><ul><li>パナソニックエレクトリックワークス社（設計図面作図自動化）</li><li>Panasonic Accelerator 最優秀社長賞受賞（2025.5）</li><li>株式会社ダイクレ（図面ナレッジ活用DX、2024.6）</li><li>E4G株式会社（脱炭素化推進ソリューション、2024.5）</li><li>JGCグループ（プラント部品3Dモデル生成AI、2024.10）</li></ul><h5>リンク</h5><p><a href="https://epicai.co.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="proxindustries"><h4>Prox Industries株式会社</h4><p><strong>設立年:</strong> 2024年（法人番号登録日：2024年6月28日）<br><strong>所在地:</strong> 東京都文京区本郷3丁目30番10号 本郷K&Kビル4F<br><strong>代表者:</strong> 松崎哲史、亀井悠二（共同CEO）</p><h5>主な事業</h5><ul><li>製造業DX支援に特化したAI・ロボティクスソリューションの開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>画像認識システム（外観検査、設備監視、ロボットビジョンなど）</li><li>数理最適化ソリューション（生産計画最適化、経路計画、構造最適化など）</li><li>機械学習/深層学習モデル開発（異常検知、予知保全、CAD図面認識、生成AI活用など）</li></ul><h5>対象顧客・市場</h5><p>製造業全般（自動車、化学、食品、電子機器など）、大手企業の生産現場</p><h5>活用技術</h5><ul><li>深層学習・強化学習（東京大学松尾研究室出身エンジニアが牽引）</li><li>画像認識アルゴリズム（国際学会発表実績）</li><li>数理最適化手法</li><li>構造最適化・ロボットラーニング</li><li>生成AIモデルの産業応用</li></ul><h5>競争優位性</h5><ul><li>東京大学・京都大学での研究蓄積をバックボーンに、高度な学術知見を実装フェーズまで内製可能</li><li>画像処理から数理最適化、生成AIまで複数技術をワンストップで提供</li><li>松尾研発スタートアップとして、研究～PoC～量産導入まで一貫でリード</li></ul><h5>ミッション・ビジョン</h5><p>「製造現場へAI技術の価値ある社会実装を」</p><h5>価値観の特徴</h5><ul><li>ものづくり革新へのコミットメント</li><li>研究力と技術力の両輪による高品質なソリューション</li><li>顧客と共創しながら業務改善を追求</li></ul><h5>資金調達歴</h5><p>非公開（シード～プレシリーズA相当）</p><h5>提携・導入事例</h5><ul><li>NEXCO東日本との機械学習共同研究／国際学会発表</li><li>化学プラントの異常検知ソリューション（上場企業向け）</li><li>複数製造業大手へのAIプロジェクトリード実績多数</li></ul><h5>リンク</h5><p><a href="https://prox-industries.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://prox-industries.jp/recruit/" target="_blank" rel="noopener noreferrer">採用情報</a> | <a href="https://zenn.dev/prox_industries" target="_blank" rel="noopener noreferrer">技術ブログ</a></p></div>
+<div data-company="panda"><h4>Panda株式会社</h4><p><strong>設立年:</strong> 2019年12月<br><strong>所在地:</strong> 〒769-0401　香川県三豊市財田町財田上2171-1 財田庁舎2階<br><strong>代表者:</strong> 田貝 奈央</p><h5>主な事業</h5><ul><li>AI検知技術を用いたシステム開発・研究</li><li>MR（Mixed Reality）グラスを活用した現場作業支援ツール開発</li><li>顔認証を用いた顧客情報提示システムの受託開発</li><li>機械学習モデルを活用した各種課題解決システムの受託開発</li></ul><h5>提供サービス・プロダクト</h5><p></p><h5>対象顧客・市場</h5><ul><li>製造現場や保守点検現場など教育・指導負荷を下げたい企業   / 小売店・サービス業における顧客接点の高度化を図る事業者   / 自治体や地域団体の課題解決プロジェクト</li></ul><h5>活用技術</h5><p></p><h5>競争優位性</h5><p></p><h5>ミッション・ビジョン</h5><ul><li>「テクノロジーで笑顔を創る。」</li><li>誰もが使える技術で、身近な人から遠方の人までのハッピーエクスペリエンスを実現</li></ul><h5>価値観の特徴</h5><p></p><h5>資金調達歴</h5><ul><li>設立以降、シードラウンド相当の資金調達を実施（詳細非公開）</li><li>直近で「資金調達のお知らせ」を公表</li></ul><h5>提携・導入事例</h5><ul><li>高専人会交流会への出展実績</li><li>MR作業マニュアルの初期導入企業でのフィールドテスト完了</li><li>地元企業・自治体とのPoCプロジェクト複数進行中</li></ul><h5>リンク</h5><p><a href="https://pd-panda.com/" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+<div data-company="三豊ai開発"><h4>株式会社三豊AI開発 (MitoyoAI Development Co., Ltd.)</h4><p><strong>設立年:</strong> 2020年8月19日<br><strong>所在地:</strong> 香川県三豊市財田町財田上2171-1<br><strong>代表者:</strong> 代表取締役社長　武智 大河</p><h5>主な事業</h5><ul><li>AIとロボット・ドローン技術を組み合わせた送電線点検サービスの研究開発・提供</li></ul><h5>提供サービス・プロダクト</h5><ul><li>AI送電線点検システム（ディープラーニングによる画像解析＋自動報告書生成）</li><li>送電線自走型点検ロボット</li><li>送電線点検ドローン（ロボット走行×飛行ハイブリッド）</li><li>AI遠隔操縦クローラ（遠隔地からのインターネット操作＋AIカメラ安全監視）</li><li>小型運搬ドローン（AEDなど物資配送向け）</li></ul><h5>対象顧客・市場</h5><ul><li>電力会社・送配電事業者、インフラ管理者、自治体</li></ul><h5>活用技術</h5><ul><li>ディープラーニングを用いた送電線外観映像の異常検知</li><li>エッジAIカメラによるリアルタイム判定</li><li>自走式ロボット・ドローン統合プラットフォーム</li><li>IoT経由の遠隔制御技術</li></ul><h5>競争優位性</h5><ul><li>高専発のものづくり技術と最新AIを組み合わせたロボ・ドローン両対応の点検ソリューション</li><li>データ取得から解析、報告書生成までをワンストップで提供するDXアプリケーション</li><li>従来の目視点検では気づきにくい小規模な損傷も検出可能な高精度AI</li></ul><h5>ミッション・ビジョン</h5><ul><li>「AIを活用した電線点検サービスシステムの提供」を通じてインフラ点検の安全性・効率性を向上</li></ul><h5>価値観の特徴</h5><ul><li>社会実装への積極的チャレンジ精神</li><li>地方発スタートアップならではの自走力とものづくりマインド</li><li>安全性確保と業務効率化による社会貢献志向</li></ul><h5>資金調達歴</h5><ul><li>DCON2019（日本ディープラーニング協会主催）本選出場チームとして企業評価額3億円、投資3,000万円規模の評価獲得</li><li>VC出資、公的機関資金支援あり（詳細非公開）</li></ul><h5>提携・導入事例</h5><ul><li>テクノ・サクセス株式会社との共同開発によるロボット製造・運用体制</li><li>Wind EXPO（風力発電展）出展、NHK「クローズアップ現代＋」、日本経済新聞での製品紹介実績</li></ul><h5>リンク</h5><p><a href="https://mitoyo-ai-dev.com/" target="_blank" rel="noopener noreferrer">公式サイト</a> | <a href="https://mitoyo-ai-dev.com/contact/" target="_blank" rel="noopener noreferrer">問い合わせ</a></p></div>
+<div data-company="integrai"><h4>株式会社IntegrAI (IntegrAI Inc.)</h4><p><strong>設立年:</strong> 2020年7月27日<br><strong>所在地:</strong> 〒113-0033 東京都文京区本郷6-25-14 宗文館ビル3階 HONGO EGG内<br><strong>代表者:</strong> バヤルバト・ノムンバヤスガラント（代表取締役CEO）</p><h5>主な事業</h5><ul><li>産業用AIカメラシステム「IntegrAI Camera」の開発・提供</li><li>製造業向けDX支援ソフトウェア開発（Industrial AI Lab）</li></ul><h5>提供サービス・プロダクト</h5><ul><li>IntegrAI Camera：既存設備のアナログ／デジタルメータ、パトライト等をAIで読み取り自動データ化</li><li>遠隔監視・通知機能（メール／LINE／WebHook）</li><li>解析ダッシュボード（グラフ表示、履歴データ、画像確認）</li><li>生成AIを活用した現場支援ツール開発・導入コンサルティング</li></ul><h5>対象顧客・市場</h5><ul><li>製造業・インフラ業界の中堅・大手企業、老朽設備のレトロフィット需要、設備保全・品質管理部門</li></ul><h5>活用技術</h5><ul><li>ディープラーニングを用いた高精度画像認識モデル</li><li>エッジ側カメラでのリアルタイム推論</li><li>クラウド連携による時系列データ蓄積・可視化・アラート通知</li><li>生成AI技術の現場応用研究</li></ul><h5>競争優位性</h5><ul><li>機器改造不要でマグネット着脱可能な小型カメラによる簡易設置</li><li>既存保全システムとのシームレスな連携性</li><li>東京大学・松尾豊研究室らとの共同研究による最新AI技術の採用</li><li>「小さなピースの積分」による段階的かつ柔軟な導入アプローチ</li></ul><h5>ミッション・ビジョン</h5><p>「あらゆるものは小さなピースから成り、積分（integral）により実体化する。最新のAI技術で小さな一歩を社会課題解決につなげる」</p><h5>価値観の特徴</h5><ul><li>現場起点での課題抽出・スモールスタート推進</li><li>アカデミアと産業界の協働による技術実装志向</li><li>若手技術者の主体的成長・多様性を重視</li></ul><h5>資金調達歴</h5><ul><li>2022年8月　Deep30を引受先とする第三者割当増資</li><li>2021年11月　DSF等からのシード調達</li></ul><h5>提携・導入事例</h5><ul><li>長岡市内熱処理工場での温度計グラフ化による冷却時間可視化</li><li>大規模ワクチン接種会場の超低温冷凍庫監視システム</li><li>大手自動車・食品メーカーへの設備稼働監視・省エネ支援</li></ul><h5>リンク</h5><p><a href="https://integrai.jp/" target="_blank" rel="noopener noreferrer">公式サイト</a></p></div>
+</div>
 
+<script src="script.js"></script>
 
-/* Responsive */
-@media (max-width: 768px) {
-    .main-header { flex-direction: column; padding: 10px 20px; align-items: center; }
-    main { padding-top: 120px; }
-    .two-columns { flex-direction: column; }
-    .tabs { flex-direction: column; align-items: center; }
-    .tab-link { width: 100%; text-align: center; border-bottom: 1px solid var(--border-color);}
-    .modal-header h3 { font-size: 1.4rem; }
-    /* スマートフォンではモーダルを全画面に近くする */
-    .modal-content {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
-}
+</body>
+</html>
